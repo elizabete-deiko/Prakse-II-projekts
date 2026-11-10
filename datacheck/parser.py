@@ -220,3 +220,117 @@ def parse_mars(rows):
             'tariff_row_id': clean(row.get('Tariff_Row_ID')),
         })
     return result
+
+
+def sql_values(text, parameter):
+    name = re.escape(parameter)
+    group = re.search(r'@' + name + r'\s+IN\s*\(([^)]*)\)', text, re.I)
+    if group:
+        return re.findall(r"'([^']+)'", group.group(1))
+    single = re.search(r'@' + name + r"\s*=\s*'([^']+)'", text, re.I)
+    if single:
+        return [single.group(1)]
+    return []
+
+
+def sql_equipment(text):
+    equipment = set()
+    pattern = (
+        r"\(@Equipment_Size\s*=\s*'(\d+)'\s+and\s+"
+        r"(?:@Is_Operational_Reefer\s*(=|<>)\s*1\s+and\s+)?"
+        r"@Equipment_Type\s*=\s*'([A-Z]+)'\)"
+    )
+    for item in re.finditer(pattern, text, re.I):
+        size, operator, kind = item.groups()
+        equipment.add((int(size), kind.upper(), int(operator == '=')))
+    return equipment
+
+
+def sql_comment(text, label):
+    match = re.search(r'^\s*---\s*' + re.escape(label) + r':\s*([^\r\n]+)', text, re.I | re.M)
+    return clean(match.group(1)) if match else ''
+
+
+def parse_ova(text, source_name='OVA.txt'):
+    results = []
+    blocks = re.split(r'(?=^\s*SELECT\s+\[exception_name\]\s*=\s*CASE)', text, flags=re.I | re.M)
+    statements = [block for block in blocks if re.search(r'^\s*SELECT\s+\[exception_name\]', block, re.I)]
+    if not statements:
+        raise InputError('OVA failā nav SELECT [exception_name]= CASE')
+
+    for statement in statements:
+        direction = 'Export' if re.search(r'WHEN\s+@IS_EXPORT\s*=\s*0\s+THEN\s+NULL', statement, re.I) else 'Import'
+        branches = re.split(r'(?=^\s*WHEN\s+\(@Service_Contract_Number\b)', statement, flags=re.I | re.M)
+
+        for branch in branches[1:]:
+            then = re.search(r"\bTHEN\s+'([^']+)'", branch, re.I)
+            if not then:
+                continue
+            exception_name = then.group(1)
+            if exception_name.startswith('Wasted_Run') or '@End_Event_Name' in branch[:then.start()]:
+                continue
+
+            conditions = branch[:then.start()]
+            comments = branch[then.end():]
+            contracts = sql_values(conditions, 'Service_Contract_Number')
+            if not contracts:
+                raise InputError(f'{exception_name}: nav līguma numura')
+
+            contract_number = contracts[0]
+            for value in contracts:
+                if re.fullmatch(r'R\d{9,}', value):
+                    contract_number = value
+                    break
+            service_contract = next((v for v in contracts if v != contract_number), '')
+
+            start_match = re.search(r"@Reference_Date\s*>=\s*'(\d{4}-\d{2}-\d{2})'", conditions, re.I)
+            end_match = re.search(r"@Reference_Date\s*<\s*'(\d{4}-\d{2}-\d{2})'", conditions, re.I)
+            if not start_match or not end_match:
+                raise InputError(f'{exception_name}: trūkst Reference Date')
+            end_date = date.fromisoformat(end_match.group(1)) - timedelta(days=1)
+
+            free = sql_comment(comments, 'Free days')
+            free_match = re.fullmatch(r'(\d+)\s*([A-Z]?)', free)
+            if not free_match:
+                raise InputError(f'{exception_name}: trūkst Free days')
+
+            rates = {f'l{level}_{part}': None for level in range(1, 7) for part in ('days', 'rate')}
+            for level in range(1, 7):
+                for part in ('days', 'rate'):
+                    value = sql_comment(comments, f'Level {level} {part}')
+                    rates[f'l{level}_{part}'] = number(value)
+
+            results.append({
+                'exception_name': exception_name,
+                'contract_number': contract_number,
+                'service_contract': service_contract,
+                'valid_from': start_match.group(1),
+                'valid_to': end_date.isoformat(),
+                'pols': set(sql_values(conditions, 'Origin_Port_UNCODE')),
+                'pods': set(sql_values(conditions, 'Destination_Port_UNCODE')),
+                'holder': next(iter(sql_values(conditions, 'Contract_Holder_TMS')), ''),
+                'named': next(iter(sql_values(conditions, 'Named_account_TMS')), ''),
+                'equip': sql_equipment(conditions),
+                'free_days': int(free_match.group(1)),
+                'days_type': free_match.group(2),
+                'approved_by': sql_comment(comments, 'Approved by'),
+                'currency': currency(sql_comment(comments, 'Currency')),
+                'rates': rates,
+                'direction': direction,
+                'sql_file': source_name,
+            })
+    return results
+
+
+def read_ova(path):
+    path = Path(path)
+    if not path.exists():
+        raise InputError(f'Nav atrasts OVA ceļš: {path}')
+    files = sorted(path.glob('*.txt')) if path.is_dir() else [path]
+    if not files:
+        raise InputError('OVA mapē nav TXT failu')
+
+    result = []
+    for file in files:
+        result.extend(parse_ova(file.read_text(encoding='utf-8-sig'), file.name))
+    return result

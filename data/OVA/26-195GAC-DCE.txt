@@ -1,0 +1,69 @@
+-- SYNTHETIC TRAINING EXCEPTIONS; agency=ZA; direction=Export
+-- No real contract numbers, accounts or MSC users are included.
+SELECT [exception_name]= CASE
+
+WHEN @IS_EXPORT = 0 THEN NULL
+WHEN @INVOICE_TYPE IN ('DEMURRAGE_EXPORT_FULL', 'DEM_EXP_FULL_FOREIGN')
+
+THEN CASE
+
+	WHEN (@Service_Contract_Number = '26-195GAC')
+	and (@Reference_Date >= '2026-01-01' and @Reference_Date < '2031-01-01')
+	and (@End_Event_Name = 'ERM')
+
+		THEN 'Wasted_Run-01'
+
+---Free days: 0
+
+	WHEN (@Service_Contract_Number IN('R95426022853746','26-195GAC'))
+	and (@Reference_Date >= '2026-12-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('DEHAM','FRLEH'))
+	and (@Origin_Port_UNCODE = 'ZAPLZ')
+	and (@Contract_Holder_TMS = 'DE798249')
+	and (@Named_account_TMS = 'DE980722')
+	and ((@Equipment_Size = '20' and @Equipment_Type = 'DV'))
+
+		THEN '26-195GAC-DCE-01'
+
+---Free days: 21N
+---Approved by: Elīna KRŪMIŅA
+
+	WHEN (@Service_Contract_Number IN('R20926093669519','26-195GAC'))
+	and (@Reference_Date >= '2026-12-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE = 'NLRTM')
+	and (@Origin_Port_UNCODE IN('ZADUR','ZAZBA'))
+	and (@Contract_Holder_TMS = 'DE671745')
+	and (@Named_account_TMS = 'DE480715')
+	and ((@Equipment_Size = '45' and @Equipment_Type = 'HC'))
+
+		THEN '26-195GAC-DCE-02'
+
+---Free days: 7
+---Currency: EUR
+---Approved by: Marta KALNIŅA
+---Level 1 rate: 60
+
+	WHEN (@Service_Contract_Number IN('R71926099034904','26-195GAC'))
+	and (@Reference_Date >= '2026-12-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('ITGOA','PLGDN'))
+	and (@Origin_Port_UNCODE IN('ZADUR','ZAPLZ'))
+	and (@Contract_Holder_TMS = 'DE768930')
+	and (@Named_account_TMS = 'DE639011')
+	and ((@Equipment_Size = '40' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Equipment_Type = 'HC'))
+
+		THEN '26-195GAC-DCE-03'
+
+---Free days: 18C
+---Currency: USD
+---Approved by: Toms EGLĪTIS
+---Level 1 days: 3
+---Level 1 rate: 55
+---Level 2 rate: 80
+
+	ELSE
+		NULL
+	END
+ELSE
+	NULL
+END

@@ -1,0 +1,90 @@
+-- SYNTHETIC TRAINING EXCEPTIONS; agency=ZA; direction=Import
+-- No real contract numbers, accounts or MSC users are included.
+SELECT [exception_name]= CASE
+
+WHEN @IS_EXPORT = 1 THEN NULL
+WHEN @INVOICE_TYPE IN ('DEMURRAGE_IMPORT', 'DEMURRAGE_IMPORT_FULL')
+
+THEN CASE
+
+	WHEN (@Service_Contract_Number IN('R93626021759116','26-891WW'))
+	and (@Reference_Date >= '2026-12-31' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('ZADUR','ZAPLZ'))
+	and (@Origin_Port_UNCODE = 'BEANR')
+	and (@Contract_Holder_TMS = 'ZA302097')
+	and (@Named_account_TMS = 'ZA937826')
+	and ((@Equipment_Size = '40' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Is_Operational_Reefer <> 1 and @Equipment_Type = 'RE')
+	 or (@Equipment_Size = '40' and @Is_Operational_Reefer <> 1 and @Equipment_Type = 'HR'))
+
+		THEN '26-891WW-DMI-01'
+
+---Free days: 7
+---Currency: USD
+---Approved by: Rihards OZOLS
+---Level 1 days: 3
+---Level 1 rate: 70
+---Level 2 days: 4
+---Level 2 rate: 100
+---Level 3 days: 5
+---Level 3 rate: 130
+---Level 4 rate: 190
+
+	WHEN (@Service_Contract_Number IN('R73826043960469','26-891WW'))
+	and (@Reference_Date >= '2026-12-31' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE = 'ZAPLZ')
+	and (@Origin_Port_UNCODE IN('DEBRV','ITBRI'))
+	and (@Contract_Holder_TMS = 'ZA400070')
+	and (@Named_account_TMS = 'ZA234166')
+	and ((@Equipment_Size = '40' and @Is_Operational_Reefer = 1 and @Equipment_Type = 'RE')
+	 or (@Equipment_Size = '40' and @Is_Operational_Reefer = 1 and @Equipment_Type = 'HR'))
+
+		THEN '26-891WW-DMI-02'
+
+---Free days: 14C
+---Currency: EUR
+---Approved by: Alma VĒTRA
+---Level 1 days: 5
+---Level 1 rate: 85
+---Level 2 rate: 120
+
+	WHEN (@Service_Contract_Number IN('R28326051758444','26-891WW'))
+	and (@Reference_Date >= '2026-12-31' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('ZADUR','ZAPLZ'))
+	and (@Origin_Port_UNCODE IN('ITGOA','NLRTM'))
+	and (@Contract_Holder_TMS = 'ZA277185')
+	and (@Named_account_TMS = 'ZA313647')
+	and ((@Equipment_Size = '20' and @Equipment_Type = 'DV'))
+
+		THEN '26-891WW-DMI-03'
+
+---Free days: 20N
+---Currency: EUR
+---Approved by: Marta KALNIŅA
+---Level 1 days: 4
+---Level 1 rate: 50
+---Level 2 days: 7
+---Level 2 rate: 65
+---Level 3 rate: 95
+
+	WHEN (@Service_Contract_Number IN('R18426105643460','26-891WW'))
+	and (@Reference_Date >= '2026-12-31' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('ZADUR','ZAZBA'))
+	and (@Origin_Port_UNCODE = 'NLRTM')
+	and (@Contract_Holder_TMS = 'ZA791608')
+	and (@Named_account_TMS = 'ZA343403')
+	and ((@Equipment_Size = '20' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Equipment_Type = 'HC'))
+
+		THEN '26-891WW-DMI-04'
+
+---Free days: 10
+---Approved by: Alma VĒTRA
+
+	ELSE
+		NULL
+	END
+ELSE
+	NULL
+END

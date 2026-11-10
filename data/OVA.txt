@@ -1,0 +1,1106 @@
+-- FILE: 26-688EUUS-DCE.txt
+-- SYNTHETIC TRAINING EXCEPTIONS; agency=US; direction=Export
+-- No real contract numbers, accounts or MSC users are included.
+SELECT [exception_name]= CASE
+
+WHEN @IS_EXPORT = 0 THEN NULL
+WHEN @INVOICE_TYPE IN ('DEMURRAGE_EXPORT_FULL', 'DEM_EXP_FULL_FOREIGN')
+
+THEN CASE
+
+	WHEN (@Service_Contract_Number = '26-688EUUS')
+	and (@Reference_Date >= '2026-01-01' and @Reference_Date < '2031-01-01')
+	and (@End_Event_Name = 'ERM')
+
+		THEN 'Wasted_Run-01'
+
+---Free days: 0
+
+	WHEN (@Service_Contract_Number IN('R79626078407408','26-688EUUS'))
+	and (@Reference_Date >= '2026-11-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('BEANR','DEHAM'))
+	and (@Origin_Port_UNCODE = 'USPHL')
+	and (@Contract_Holder_TMS = 'DE867254')
+	and (@Named_account_TMS = 'DE737557')
+	and ((@Equipment_Size = '40' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Equipment_Type = 'HC'))
+
+		THEN '26-688EUUS-DCE-01'
+
+---Free days: 14C
+---Approved by: Edgars LIEPA
+
+	WHEN (@Service_Contract_Number IN('R82426026224792','26-688EUUS'))
+	and (@Reference_Date >= '2026-11-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE = 'NLRTM')
+	and (@Origin_Port_UNCODE IN('USBOS','USCHS'))
+	and (@Contract_Holder_TMS = 'DE396573')
+	and (@Named_account_TMS = 'DE925543')
+	and ((@Equipment_Size = '20' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '20' and @Is_Operational_Reefer <> 1 and @Equipment_Type = 'RE'))
+
+		THEN '26-688EUUS-DCE-02'
+
+---Free days: 15N
+---Currency: EUR
+---Approved by: Toms EGLĪTIS
+---Level 1 rate: 60
+
+	WHEN (@Service_Contract_Number IN('R68326045837918','26-688EUUS'))
+	and (@Reference_Date >= '2026-11-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('DEBRV','NLRTM'))
+	and (@Origin_Port_UNCODE IN('USOAK','USPHL'))
+	and (@Contract_Holder_TMS = 'DE348786')
+	and (@Named_account_TMS = 'DE978621')
+	and ((@Equipment_Size = '40' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Is_Operational_Reefer <> 1 and @Equipment_Type = 'RE')
+	 or (@Equipment_Size = '40' and @Is_Operational_Reefer <> 1 and @Equipment_Type = 'HR'))
+
+		THEN '26-688EUUS-DCE-03'
+
+---Free days: 5
+---Currency: EUR
+---Approved by: Līga ZARIŅA
+---Level 1 days: 3
+---Level 1 rate: 50
+---Level 2 rate: 65
+
+	WHEN (@Service_Contract_Number IN('R16926089666924','26-688EUUS'))
+	and (@Reference_Date >= '2026-11-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('DEBRV','DEHAM'))
+	and (@Origin_Port_UNCODE = 'USCHS')
+	and (@Contract_Holder_TMS = 'DE957598')
+	and (@Named_account_TMS = 'DE583794')
+	and ((@Equipment_Size = '40' and @Is_Operational_Reefer = 1 and @Equipment_Type = 'RE')
+	 or (@Equipment_Size = '40' and @Is_Operational_Reefer = 1 and @Equipment_Type = 'HR'))
+
+		THEN '26-688EUUS-DCE-04'
+
+---Free days: 25C
+---Currency: EUR
+---Approved by: Sintētisks CITS APSTIPRINĀTĀJS
+---Level 1 days: 4
+---Level 1 rate: 70
+---Level 2 days: 6
+---Level 2 rate: 110
+---Level 3 rate: 145
+
+	ELSE
+		NULL
+	END
+ELSE
+	NULL
+END
+
+
+-- FILE: 26-247GAC-DMI.txt
+-- SYNTHETIC TRAINING EXCEPTIONS; agency=US; direction=Import
+-- No real contract numbers, accounts or MSC users are included.
+SELECT [exception_name]= CASE
+
+WHEN @IS_EXPORT = 1 THEN NULL
+WHEN @INVOICE_TYPE IN ('DEMURRAGE_IMPORT', 'DEMURRAGE_IMPORT_FULL')
+
+THEN CASE
+
+	WHEN (@Service_Contract_Number IN('R18726109119597','26-247GAC'))
+	and (@Reference_Date >= '2026-12-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('USBAL','USBOS'))
+	and (@Origin_Port_UNCODE = 'NLRTM')
+	and (@Contract_Holder_TMS = 'US838116')
+	and (@Named_account_TMS = 'US699892')
+	and ((@Equipment_Size = '20' and @Equipment_Type = 'DV'))
+
+		THEN '26-247GAC-DMI-01'
+
+---Free days: 20N
+---Approved by: Alma VĒTRA
+
+	WHEN (@Service_Contract_Number IN('R50226051135729','26-247GAC'))
+	and (@Reference_Date >= '2026-12-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE = 'USHOU')
+	and (@Origin_Port_UNCODE IN('BEANR','DEHAM'))
+	and (@Contract_Holder_TMS = 'US947822')
+	and (@Named_account_TMS = 'US542932')
+	and ((@Equipment_Size = '20' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Equipment_Type = 'HC'))
+
+		THEN '26-247GAC-DMI-02'
+
+---Free days: 28
+---Currency: USD
+---Approved by: Marta KALNIŅA
+---Level 1 days: 5
+---Level 1 rate: 65
+---Level 2 rate: 90
+
+	WHEN (@Service_Contract_Number IN('R38326048479331','26-247GAC'))
+	and (@Reference_Date >= '2026-12-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('USBAL','USOAK'))
+	and (@Origin_Port_UNCODE IN('BEANR','PLGDN'))
+	and (@Contract_Holder_TMS = 'US543074')
+	and (@Named_account_TMS = 'US561036')
+	and ((@Equipment_Size = '40' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Equipment_Type = 'HC'))
+
+		THEN '26-247GAC-DMI-03'
+
+---Free days: 15C
+---Currency: EUR
+---Approved by: Edgars LIEPA
+---Level 1 days: 4
+---Level 1 rate: 45
+---Level 2 days: 7
+---Level 2 rate: 70
+---Level 3 rate: 100
+
+	WHEN (@Service_Contract_Number IN('R73126122345139','26-247GAC'))
+	and (@Reference_Date >= '2026-12-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('USHOU','USPHL'))
+	and (@Origin_Port_UNCODE = 'BEANR')
+	and (@Contract_Holder_TMS = 'US694246')
+	and (@Named_account_TMS = 'US429992')
+	and ((@Equipment_Size = '20' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '20' and @Is_Operational_Reefer <> 1 and @Equipment_Type = 'RE'))
+
+		THEN '26-247GAC-DMI-04'
+
+---Free days: 28N
+---Currency: USD
+---Approved by: Rihards OZOLS
+---Level 1 days: 4
+---Level 1 rate: 50
+---Level 2 rate: 95
+
+	ELSE
+		NULL
+	END
+ELSE
+	NULL
+END
+
+
+-- FILE: 26-864WW-DCE.txt
+-- SYNTHETIC TRAINING EXCEPTIONS; agency=BR; direction=Export
+-- No real contract numbers, accounts or MSC users are included.
+SELECT [exception_name]= CASE
+
+WHEN @IS_EXPORT = 0 THEN NULL
+WHEN @INVOICE_TYPE IN ('DEMURRAGE_EXPORT_FULL', 'DEM_EXP_FULL_FOREIGN')
+
+THEN CASE
+
+	WHEN (@Service_Contract_Number = '26-864WW')
+	and (@Reference_Date >= '2026-01-01' and @Reference_Date < '2031-01-01')
+	and (@End_Event_Name = 'ERM')
+
+		THEN 'Wasted_Run-01'
+
+---Free days: 0
+
+	WHEN (@Service_Contract_Number IN('R43426091225043','26-864WW'))
+	and (@Reference_Date >= '2026-12-31' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('ITBRI','ITGOA'))
+	and (@Origin_Port_UNCODE = 'BRRIO')
+	and (@Contract_Holder_TMS = 'DE539366')
+	and (@Named_account_TMS = 'DE811185')
+	and ((@Equipment_Size = '40' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Is_Operational_Reefer <> 1 and @Equipment_Type = 'RE')
+	 or (@Equipment_Size = '40' and @Is_Operational_Reefer <> 1 and @Equipment_Type = 'HR'))
+
+		THEN '26-864WW-DCE-01'
+
+---Free days: 20
+---Currency: EUR
+---Approved by: Elīna KRŪMIŅA
+---Level 1 days: 4
+---Level 1 rate: 50
+---Level 2 rate: 70
+
+	WHEN (@Service_Contract_Number IN('R83126101799839','26-864WW'))
+	and (@Reference_Date >= '2026-12-31' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE = 'NLRTM')
+	and (@Origin_Port_UNCODE IN('BRPNG','BRSSZ'))
+	and (@Contract_Holder_TMS = 'DE497525')
+	and (@Named_account_TMS = 'DE703706')
+	and ((@Equipment_Size = '40' and @Is_Operational_Reefer = 1 and @Equipment_Type = 'RE')
+	 or (@Equipment_Size = '40' and @Is_Operational_Reefer = 1 and @Equipment_Type = 'HR'))
+
+		THEN '26-864WW-DCE-02'
+
+---Free days: 20C
+---Currency: EUR
+---Approved by: Elīna KRŪMIŅA
+---Level 1 days: 4
+---Level 1 rate: 50
+---Level 2 days: 3
+---Level 2 rate: 70
+---Level 3 days: 5
+---Level 3 rate: 95
+---Level 4 rate: 160
+
+	WHEN (@Service_Contract_Number IN('R42426042050803','26-864WW'))
+	and (@Reference_Date >= '2027-01-14' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('DEHAM','ITGOA'))
+	and (@Origin_Port_UNCODE IN('BRPNG','BRRIO'))
+	and (@Contract_Holder_TMS = 'DE250547')
+	and (@Named_account_TMS = 'DE470401')
+	and ((@Equipment_Size = '20' and @Equipment_Type = 'DV'))
+
+		THEN '26-864WW-DCE-03'
+
+---Free days: 28N
+---Currency: EUR
+---Approved by: Toms EGLĪTIS
+---Level 1 days: 3
+---Level 1 rate: 65
+---Level 2 rate: 70
+
+	WHEN (@Service_Contract_Number IN('R28226059815006','26-864WW'))
+	and (@Reference_Date >= '2026-12-31' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('ITBRI','ITGOA'))
+	and (@Origin_Port_UNCODE = 'BRSSZ')
+	and (@Contract_Holder_TMS = 'DE411564')
+	and (@Named_account_TMS = 'DE354821')
+	and ((@Equipment_Size = '20' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Equipment_Type = 'HC'))
+
+		THEN '26-864WW-DCE-04'
+
+---Free days: 21
+---Currency: EUR
+---Approved by: Līga ZARIŅA
+---Level 1 days: 4
+---Level 1 rate: 70
+---Level 2 days: 6
+---Level 2 rate: 95
+---Level 3 rate: 145
+
+	ELSE
+		NULL
+	END
+ELSE
+	NULL
+END
+
+
+-- FILE: 26-222EUUS-DMI.txt
+-- SYNTHETIC TRAINING EXCEPTIONS; agency=BR; direction=Import
+-- No real contract numbers, accounts or MSC users are included.
+SELECT [exception_name]= CASE
+
+WHEN @IS_EXPORT = 1 THEN NULL
+WHEN @INVOICE_TYPE IN ('DEMURRAGE_IMPORT', 'DEMURRAGE_IMPORT_FULL')
+
+THEN CASE
+
+	WHEN (@Service_Contract_Number IN('R55126077614880','26-222EUUS'))
+	and (@Reference_Date >= '2026-11-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('BRRIO','BRSSZ'))
+	and (@Origin_Port_UNCODE = 'ITBRI')
+	and (@Contract_Holder_TMS = 'BR862251')
+	and (@Named_account_TMS = 'BR453489')
+	and ((@Equipment_Size = '40' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Equipment_Type = 'HC'))
+
+		THEN '26-222EUUS-DMI-01'
+
+---Free days: 15C
+---Currency: EUR
+---Approved by: Toms EGLĪTIS
+---Level 1 days: 3
+---Level 1 rate: 65
+---Level 2 days: 4
+---Level 2 rate: 95
+---Level 3 days: 5
+---Level 3 rate: 130
+---Level 4 rate: 180
+
+	WHEN (@Service_Contract_Number IN('R61226125058197','26-222EUUS'))
+	and (@Reference_Date >= '2026-11-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE = 'BRSSZ')
+	and (@Origin_Port_UNCODE = 'NLRTM')
+	and (@Contract_Holder_TMS = 'BR146200')
+	and (@Named_account_TMS = 'BR146982')
+	and ((@Equipment_Size = '20' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '20' and @Is_Operational_Reefer <> 1 and @Equipment_Type = 'RE'))
+
+		THEN '26-222EUUS-DMI-02'
+
+---Free days: 15N
+---Currency: USD
+---Approved by: Elīna KRŪMIŅA
+---Level 1 days: 5
+---Level 1 rate: 90
+---Level 2 rate: 110
+
+	WHEN (@Service_Contract_Number IN('R30926044489192','26-222EUUS'))
+	and (@Reference_Date >= '2026-11-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE = 'USNYC')
+	and (@Origin_Port_UNCODE IN('ITGOA','PLGDN'))
+	and (@Contract_Holder_TMS = 'BR911498')
+	and (@Named_account_TMS = 'BR585948')
+	and ((@Equipment_Size = '40' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Is_Operational_Reefer <> 1 and @Equipment_Type = 'RE')
+	 or (@Equipment_Size = '40' and @Is_Operational_Reefer <> 1 and @Equipment_Type = 'HR'))
+
+		THEN '26-222EUUS-DMI-03'
+
+---Free days: 25
+---Currency: EUR
+---Approved by: Elīna KRŪMIŅA
+---Level 1 days: 4
+---Level 1 rate: 50
+---Level 2 days: 7
+---Level 2 rate: 70
+---Level 3 rate: 100
+
+	WHEN (@Service_Contract_Number IN('R27226045033377','26-222EUUS'))
+	and (@Reference_Date >= '2026-11-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('BRRIO','BRSSZ'))
+	and (@Origin_Port_UNCODE = 'DEHAM')
+	and (@Contract_Holder_TMS = 'BR153064')
+	and (@Named_account_TMS = 'BR173188')
+	and ((@Equipment_Size = '40' and @Is_Operational_Reefer = 1 and @Equipment_Type = 'RE')
+	 or (@Equipment_Size = '40' and @Is_Operational_Reefer = 1 and @Equipment_Type = 'HR'))
+
+		THEN '26-222EUUS-DMI-04'
+
+---Free days: 20C
+---Approved by: Anna BĒRZIŅA
+
+	ELSE
+		NULL
+	END
+ELSE
+	NULL
+END
+
+
+-- FILE: 26-195GAC-DCE.txt
+-- SYNTHETIC TRAINING EXCEPTIONS; agency=ZA; direction=Export
+-- No real contract numbers, accounts or MSC users are included.
+SELECT [exception_name]= CASE
+
+WHEN @IS_EXPORT = 0 THEN NULL
+WHEN @INVOICE_TYPE IN ('DEMURRAGE_EXPORT_FULL', 'DEM_EXP_FULL_FOREIGN')
+
+THEN CASE
+
+	WHEN (@Service_Contract_Number = '26-195GAC')
+	and (@Reference_Date >= '2026-01-01' and @Reference_Date < '2031-01-01')
+	and (@End_Event_Name = 'ERM')
+
+		THEN 'Wasted_Run-01'
+
+---Free days: 0
+
+	WHEN (@Service_Contract_Number IN('R95426022853746','26-195GAC'))
+	and (@Reference_Date >= '2026-12-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('DEHAM','FRLEH'))
+	and (@Origin_Port_UNCODE = 'ZAPLZ')
+	and (@Contract_Holder_TMS = 'DE798249')
+	and (@Named_account_TMS = 'DE980722')
+	and ((@Equipment_Size = '20' and @Equipment_Type = 'DV'))
+
+		THEN '26-195GAC-DCE-01'
+
+---Free days: 21N
+---Approved by: Elīna KRŪMIŅA
+
+	WHEN (@Service_Contract_Number IN('R20926093669519','26-195GAC'))
+	and (@Reference_Date >= '2026-12-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE = 'NLRTM')
+	and (@Origin_Port_UNCODE IN('ZADUR','ZAZBA'))
+	and (@Contract_Holder_TMS = 'DE671745')
+	and (@Named_account_TMS = 'DE480715')
+	and ((@Equipment_Size = '45' and @Equipment_Type = 'HC'))
+
+		THEN '26-195GAC-DCE-02'
+
+---Free days: 7
+---Currency: EUR
+---Approved by: Marta KALNIŅA
+---Level 1 rate: 60
+
+	WHEN (@Service_Contract_Number IN('R71926099034904','26-195GAC'))
+	and (@Reference_Date >= '2026-12-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('ITGOA','PLGDN'))
+	and (@Origin_Port_UNCODE IN('ZADUR','ZAPLZ'))
+	and (@Contract_Holder_TMS = 'DE768930')
+	and (@Named_account_TMS = 'DE639011')
+	and ((@Equipment_Size = '40' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Equipment_Type = 'HC'))
+
+		THEN '26-195GAC-DCE-03'
+
+---Free days: 18C
+---Currency: USD
+---Approved by: Toms EGLĪTIS
+---Level 1 days: 3
+---Level 1 rate: 55
+---Level 2 rate: 80
+
+	ELSE
+		NULL
+	END
+ELSE
+	NULL
+END
+
+
+-- FILE: 26-891WW-DMI.txt
+-- SYNTHETIC TRAINING EXCEPTIONS; agency=ZA; direction=Import
+-- No real contract numbers, accounts or MSC users are included.
+SELECT [exception_name]= CASE
+
+WHEN @IS_EXPORT = 1 THEN NULL
+WHEN @INVOICE_TYPE IN ('DEMURRAGE_IMPORT', 'DEMURRAGE_IMPORT_FULL')
+
+THEN CASE
+
+	WHEN (@Service_Contract_Number IN('R93626021759116','26-891WW'))
+	and (@Reference_Date >= '2026-12-31' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('ZADUR','ZAPLZ'))
+	and (@Origin_Port_UNCODE = 'BEANR')
+	and (@Contract_Holder_TMS = 'ZA302097')
+	and (@Named_account_TMS = 'ZA937826')
+	and ((@Equipment_Size = '40' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Is_Operational_Reefer <> 1 and @Equipment_Type = 'RE')
+	 or (@Equipment_Size = '40' and @Is_Operational_Reefer <> 1 and @Equipment_Type = 'HR'))
+
+		THEN '26-891WW-DMI-01'
+
+---Free days: 7
+---Currency: USD
+---Approved by: Rihards OZOLS
+---Level 1 days: 3
+---Level 1 rate: 70
+---Level 2 days: 4
+---Level 2 rate: 100
+---Level 3 days: 5
+---Level 3 rate: 130
+---Level 4 rate: 190
+
+	WHEN (@Service_Contract_Number IN('R73826043960469','26-891WW'))
+	and (@Reference_Date >= '2026-12-31' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE = 'ZAPLZ')
+	and (@Origin_Port_UNCODE IN('DEBRV','ITBRI'))
+	and (@Contract_Holder_TMS = 'ZA400070')
+	and (@Named_account_TMS = 'ZA234166')
+	and ((@Equipment_Size = '40' and @Is_Operational_Reefer = 1 and @Equipment_Type = 'RE')
+	 or (@Equipment_Size = '40' and @Is_Operational_Reefer = 1 and @Equipment_Type = 'HR'))
+
+		THEN '26-891WW-DMI-02'
+
+---Free days: 14C
+---Currency: EUR
+---Approved by: Alma VĒTRA
+---Level 1 days: 5
+---Level 1 rate: 85
+---Level 2 rate: 120
+
+	WHEN (@Service_Contract_Number IN('R28326051758444','26-891WW'))
+	and (@Reference_Date >= '2026-12-31' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('ZADUR','ZAPLZ'))
+	and (@Origin_Port_UNCODE IN('ITGOA','NLRTM'))
+	and (@Contract_Holder_TMS = 'ZA277185')
+	and (@Named_account_TMS = 'ZA313647')
+	and ((@Equipment_Size = '20' and @Equipment_Type = 'DV'))
+
+		THEN '26-891WW-DMI-03'
+
+---Free days: 20N
+---Currency: EUR
+---Approved by: Marta KALNIŅA
+---Level 1 days: 4
+---Level 1 rate: 50
+---Level 2 days: 7
+---Level 2 rate: 65
+---Level 3 rate: 95
+
+	WHEN (@Service_Contract_Number IN('R18426105643460','26-891WW'))
+	and (@Reference_Date >= '2026-12-31' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('ZADUR','ZAZBA'))
+	and (@Origin_Port_UNCODE = 'NLRTM')
+	and (@Contract_Holder_TMS = 'ZA791608')
+	and (@Named_account_TMS = 'ZA343403')
+	and ((@Equipment_Size = '20' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Equipment_Type = 'HC'))
+
+		THEN '26-891WW-DMI-04'
+
+---Free days: 10
+---Approved by: Alma VĒTRA
+
+	ELSE
+		NULL
+	END
+ELSE
+	NULL
+END
+
+
+-- FILE: 26-951EUUS-DCE.txt
+-- SYNTHETIC TRAINING EXCEPTIONS; agency=US; direction=Export
+-- No real contract numbers, accounts or MSC users are included.
+SELECT [exception_name]= CASE
+
+WHEN @IS_EXPORT = 0 THEN NULL
+WHEN @INVOICE_TYPE IN ('DEMURRAGE_EXPORT_FULL', 'DEM_EXP_FULL_FOREIGN')
+
+THEN CASE
+
+	WHEN (@Service_Contract_Number = '26-951EUUS')
+	and (@Reference_Date >= '2026-01-01' and @Reference_Date < '2031-01-01')
+	and (@End_Event_Name = 'ERM')
+
+		THEN 'Wasted_Run-01'
+
+---Free days: 0
+
+	WHEN (@Service_Contract_Number IN('R48626088720535','26-951EUUS'))
+	and (@Reference_Date >= '2026-11-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('ITBRI','NLRTM'))
+	and (@Origin_Port_UNCODE = 'USMOB')
+	and (@Contract_Holder_TMS = 'DE687880')
+	and (@Named_account_TMS = 'DE555504')
+	and ((@Equipment_Size = '40' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Equipment_Type = 'HC'))
+
+		THEN '26-951EUUS-DCE-01'
+
+---Free days: 5C
+---Approved by: Edgars LIEPA
+
+	WHEN (@Service_Contract_Number IN('R77726107658687','26-951EUUS'))
+	and (@Reference_Date >= '2026-11-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE = 'ITGOA')
+	and (@Origin_Port_UNCODE IN('USMOB','USPHL'))
+	and (@Contract_Holder_TMS = 'DE331551')
+	and (@Named_account_TMS = 'DE940296')
+	and ((@Equipment_Size = '20' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '20' and @Is_Operational_Reefer <> 1 and @Equipment_Type = 'RE'))
+
+		THEN '26-951EUUS-DCE-02'
+
+---Free days: 18N
+---Currency: USD
+---Approved by: Līga ZARIŅA
+---Level 1 rate: 50
+
+	WHEN (@Service_Contract_Number IN('R16426097349190','26-951EUUS'))
+	and (@Reference_Date >= '2026-11-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('FRLEH','PLGDN'))
+	and (@Origin_Port_UNCODE IN('USHOU','USSEA'))
+	and (@Contract_Holder_TMS = 'DE402580')
+	and (@Named_account_TMS = 'DE693802')
+	and ((@Equipment_Size = '40' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Is_Operational_Reefer <> 1 and @Equipment_Type = 'RE')
+	 or (@Equipment_Size = '40' and @Is_Operational_Reefer <> 1 and @Equipment_Type = 'HR'))
+
+		THEN '26-951EUUS-DCE-03'
+
+---Free days: 5
+---Currency: EUR
+---Approved by: Alma VĒTRA
+---Level 1 days: 3
+---Level 1 rate: 50
+---Level 2 rate: 80
+
+	WHEN (@Service_Contract_Number IN('R88226123706778','26-951EUUS'))
+	and (@Reference_Date >= '2026-11-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('BEANR','PLGDN'))
+	and (@Origin_Port_UNCODE = 'USHOU')
+	and (@Contract_Holder_TMS = 'DE539342')
+	and (@Named_account_TMS = 'DE338850')
+	and ((@Equipment_Size = '40' and @Is_Operational_Reefer = 1 and @Equipment_Type = 'RE')
+	 or (@Equipment_Size = '40' and @Is_Operational_Reefer = 1 and @Equipment_Type = 'HR'))
+
+		THEN '26-951EUUS-DCE-04'
+
+---Free days: 25C
+---Currency: EUR
+---Approved by: Elīna KRŪMIŅA
+---Level 1 days: 4
+---Level 1 rate: 70
+---Level 2 days: 6
+---Level 2 rate: 105
+---Level 3 rate: 135
+
+	ELSE
+		NULL
+	END
+ELSE
+	NULL
+END
+
+
+-- FILE: 26-511GAC-DMI.txt
+-- SYNTHETIC TRAINING EXCEPTIONS; agency=US; direction=Import
+-- No real contract numbers, accounts or MSC users are included.
+SELECT [exception_name]= CASE
+
+WHEN @IS_EXPORT = 1 THEN NULL
+WHEN @INVOICE_TYPE IN ('DEMURRAGE_IMPORT', 'DEMURRAGE_IMPORT_FULL')
+
+THEN CASE
+
+	WHEN (@Service_Contract_Number IN('R18326029132380','26-511GAC'))
+	and (@Reference_Date >= '2026-12-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('USBOS','USJAX'))
+	and (@Origin_Port_UNCODE = 'PLGDN')
+	and (@Contract_Holder_TMS = 'US451131')
+	and (@Named_account_TMS = 'US161862')
+	and ((@Equipment_Size = '20' and @Equipment_Type = 'DV'))
+
+		THEN '26-511GAC-DMI-01'
+
+---Free days: 5N
+---Currency: USD
+---Approved by: Alma VĒTRA
+---Level 1 days: 3
+---Level 1 rate: 70
+---Level 2 days: 4
+---Level 2 rate: 100
+---Level 3 days: 5
+---Level 3 rate: 125
+---Level 4 rate: 175
+
+	WHEN (@Service_Contract_Number IN('R16426068109900','26-511GAC'))
+	and (@Reference_Date >= '2026-12-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE = 'USLGB')
+	and (@Origin_Port_UNCODE IN('DEHAM','FRLEH'))
+	and (@Contract_Holder_TMS = 'US310968')
+	and (@Named_account_TMS = 'US899062')
+	and ((@Equipment_Size = '20' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Equipment_Type = 'HC'))
+
+		THEN '26-511GAC-DMI-02'
+
+---Free days: 10
+---Currency: EUR
+---Approved by: Līga ZARIŅA
+---Level 1 days: 5
+---Level 1 rate: 80
+---Level 2 rate: 120
+
+	WHEN (@Service_Contract_Number IN('R44526118254919','26-511GAC'))
+	and (@Reference_Date >= '2026-12-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('USBAL','USMOB'))
+	and (@Origin_Port_UNCODE IN('DEBRV','DEHAM'))
+	and (@Contract_Holder_TMS = 'US775938')
+	and (@Named_account_TMS = 'US547641')
+	and ((@Equipment_Size = '40' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Equipment_Type = 'HC'))
+
+		THEN '26-511GAC-DMI-03'
+
+---Free days: 28C
+---Currency: EUR
+---Approved by: Alma VĒTRA
+---Level 1 days: 4
+---Level 1 rate: 50
+---Level 2 days: 7
+---Level 2 rate: 65
+---Level 3 rate: 100
+
+	WHEN (@Service_Contract_Number IN('R72026046519706','26-511GAC'))
+	and (@Reference_Date >= '2026-12-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('USLAX','USOAK'))
+	and (@Origin_Port_UNCODE = 'FRLEH')
+	and (@Contract_Holder_TMS = 'US626782')
+	and (@Named_account_TMS = 'US904371')
+	and ((@Equipment_Size = '20' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '20' and @Is_Operational_Reefer <> 1 and @Equipment_Type = 'RE'))
+
+		THEN '26-511GAC-DMI-04'
+
+---Free days: 5N
+---Approved by: Edgars LIEPA
+
+	ELSE
+		NULL
+	END
+ELSE
+	NULL
+END
+
+
+-- FILE: 26-669WW-DCE.txt
+-- SYNTHETIC TRAINING EXCEPTIONS; agency=BR; direction=Export
+-- No real contract numbers, accounts or MSC users are included.
+SELECT [exception_name]= CASE
+
+WHEN @IS_EXPORT = 0 THEN NULL
+WHEN @INVOICE_TYPE IN ('DEMURRAGE_EXPORT_FULL', 'DEM_EXP_FULL_FOREIGN')
+
+THEN CASE
+
+	WHEN (@Service_Contract_Number = '26-669WW')
+	and (@Reference_Date >= '2026-01-01' and @Reference_Date < '2031-01-01')
+	and (@End_Event_Name = 'ERM')
+
+		THEN 'Wasted_Run-01'
+
+---Free days: 0
+
+	WHEN (@Service_Contract_Number IN('R51126101222961','26-669WW'))
+	and (@Reference_Date >= '2026-12-31' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('ITBRI','NLRTM'))
+	and (@Origin_Port_UNCODE = 'BRPNG')
+	and (@Contract_Holder_TMS = 'DE550687')
+	and (@Named_account_TMS = 'DE385356')
+	and ((@Equipment_Size = '40' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Is_Operational_Reefer <> 1 and @Equipment_Type = 'RE')
+	 or (@Equipment_Size = '40' and @Is_Operational_Reefer <> 1 and @Equipment_Type = 'HR'))
+
+		THEN '26-669WW-DCE-01'
+
+---Free days: 25
+---Approved by: Edgars LIEPA
+
+	WHEN (@Service_Contract_Number IN('R68326109007059','26-669WW'))
+	and (@Reference_Date >= '2026-12-31' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE = 'ITGOA')
+	and (@Origin_Port_UNCODE IN('BRPNG','BRSSZ'))
+	and (@Contract_Holder_TMS = 'DE597562')
+	and (@Named_account_TMS = 'DE690216')
+	and ((@Equipment_Size = '40' and @Is_Operational_Reefer = 1 and @Equipment_Type = 'RE')
+	 or (@Equipment_Size = '40' and @Is_Operational_Reefer = 1 and @Equipment_Type = 'HR'))
+
+		THEN '26-669WW-DCE-02'
+
+---Free days: 25C
+---Currency: EUR
+---Approved by: Edgars LIEPA
+---Level 1 rate: 50
+
+	WHEN (@Service_Contract_Number IN('R59426114852852','26-669WW'))
+	and (@Reference_Date >= '2026-12-31' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('DEBRV','FRLEH'))
+	and (@Origin_Port_UNCODE IN('BRPNG','BRSSZ'))
+	and (@Contract_Holder_TMS = 'DE210950')
+	and (@Named_account_TMS = 'DE630456')
+	and ((@Equipment_Size = '20' and @Equipment_Type = 'DV'))
+
+		THEN '26-669WW-DCE-03'
+
+---Free days: 20N
+---Currency: EUR
+---Approved by: Rihards OZOLS
+---Level 1 days: 3
+---Level 1 rate: 55
+---Level 2 rate: 75
+
+	WHEN (@Service_Contract_Number IN('R24326054226746','26-669WW'))
+	and (@Reference_Date >= '2026-12-31' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('FRLEH','ITBRI'))
+	and (@Origin_Port_UNCODE = 'BRPNG')
+	and (@Contract_Holder_TMS = 'DE350364')
+	and (@Named_account_TMS = 'DE940517')
+	and ((@Equipment_Size = '20' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Equipment_Type = 'HC'))
+
+		THEN '26-669WW-DCE-04'
+
+---Free days: 28
+---Currency: EUR
+---Approved by: Rihards OZOLS
+---Level 1 days: 4
+---Level 1 rate: 75
+---Level 2 days: 6
+---Level 2 rate: 100
+---Level 3 rate: 145
+
+	ELSE
+		NULL
+	END
+ELSE
+	NULL
+END
+
+
+-- FILE: 26-970EUUS-DMI.txt
+-- SYNTHETIC TRAINING EXCEPTIONS; agency=BR; direction=Import
+-- No real contract numbers, accounts or MSC users are included.
+SELECT [exception_name]= CASE
+
+WHEN @IS_EXPORT = 1 THEN NULL
+WHEN @INVOICE_TYPE IN ('DEMURRAGE_IMPORT', 'DEMURRAGE_IMPORT_FULL')
+
+THEN CASE
+
+	WHEN (@Service_Contract_Number IN('R18526071119235','26-970EUUS'))
+	and (@Reference_Date >= '2026-11-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('BRRIO','BRSSZ'))
+	and (@Origin_Port_UNCODE = 'DEBRV')
+	and (@Contract_Holder_TMS = 'BR443171')
+	and (@Named_account_TMS = 'BR111419')
+	and ((@Equipment_Size = '40' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Equipment_Type = 'HC'))
+
+		THEN '26-970EUUS-DMI-01'
+
+---Free days: 18C
+---Currency: USD
+---Approved by: Anna BĒRZIŅA
+---Level 1 days: 3
+---Level 1 rate: 65
+---Level 2 days: 4
+---Level 2 rate: 85
+---Level 3 days: 5
+---Level 3 rate: 130
+---Level 4 rate: 185
+
+	WHEN (@Service_Contract_Number IN('R53526121949471','26-970EUUS'))
+	and (@Reference_Date >= '2026-11-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE = 'BRSSZ')
+	and (@Origin_Port_UNCODE IN('DEBRV','FRLEH'))
+	and (@Contract_Holder_TMS = 'BR724787')
+	and (@Named_account_TMS = 'BR545198')
+	and ((@Equipment_Size = '20' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '20' and @Is_Operational_Reefer <> 1 and @Equipment_Type = 'RE'))
+
+		THEN '26-970EUUS-DMI-02'
+
+---Free days: 28N
+---Currency: USD
+---Approved by: Marta KALNIŅA
+---Level 1 days: 5
+---Level 1 rate: 75
+---Level 2 rate: 115
+
+	WHEN (@Service_Contract_Number IN('R14726063148959','26-970EUUS'))
+	and (@Reference_Date >= '2026-11-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('BRRIO','BRSSZ'))
+	and (@Origin_Port_UNCODE IN('DEBRV','ITBRI'))
+	and (@Contract_Holder_TMS = 'BR567994')
+	and (@Named_account_TMS = 'BR538313')
+	and ((@Equipment_Size = '40' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Is_Operational_Reefer <> 1 and @Equipment_Type = 'RE')
+	 or (@Equipment_Size = '40' and @Is_Operational_Reefer <> 1 and @Equipment_Type = 'HR'))
+
+		THEN '26-970EUUS-DMI-03'
+
+---Free days: 28
+---Currency: USD
+---Approved by: Anna BĒRZIŅA
+---Level 1 days: 4
+---Level 1 rate: 40
+---Level 2 days: 7
+---Level 2 rate: 65
+---Level 3 rate: 105
+
+	WHEN (@Service_Contract_Number IN('R86226079325168','26-970EUUS'))
+	and (@Reference_Date >= '2026-11-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('BRRIO','BRSSZ'))
+	and (@Origin_Port_UNCODE = 'DEHAM')
+	and (@Contract_Holder_TMS = 'BR663610')
+	and (@Named_account_TMS = 'BR368028')
+	and ((@Equipment_Size = '40' and @Is_Operational_Reefer = 1 and @Equipment_Type = 'RE')
+	 or (@Equipment_Size = '40' and @Is_Operational_Reefer = 1 and @Equipment_Type = 'HR'))
+
+		THEN '26-970EUUS-DMI-04'
+
+---Free days: 12C
+---Approved by: Edgars LIEPA
+
+	ELSE
+		NULL
+	END
+ELSE
+	NULL
+END
+
+
+-- FILE: 26-696GAC-DCE.txt
+-- SYNTHETIC TRAINING EXCEPTIONS; agency=ZA; direction=Export
+-- No real contract numbers, accounts or MSC users are included.
+SELECT [exception_name]= CASE
+
+WHEN @IS_EXPORT = 0 THEN NULL
+WHEN @INVOICE_TYPE IN ('DEMURRAGE_EXPORT_FULL', 'DEM_EXP_FULL_FOREIGN')
+
+THEN CASE
+
+	WHEN (@Service_Contract_Number = '26-696GAC')
+	and (@Reference_Date >= '2026-01-01' and @Reference_Date < '2031-01-01')
+	and (@End_Event_Name = 'ERM')
+
+		THEN 'Wasted_Run-01'
+
+---Free days: 0
+
+	WHEN (@Service_Contract_Number IN('R81226016918206','26-696GAC'))
+	and (@Reference_Date >= '2026-12-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('DEHAM','ITGOA'))
+	and (@Origin_Port_UNCODE = 'ZAPLZ')
+	and (@Contract_Holder_TMS = 'DE830209')
+	and (@Named_account_TMS = 'DE789763')
+	and ((@Equipment_Size = '20' and @Equipment_Type = 'DV'))
+
+		THEN '26-696GAC-DCE-01'
+
+---Free days: 14N
+---Approved by: Elīna KRŪMIŅA
+
+	WHEN (@Service_Contract_Number IN('R17326091703839','26-696GAC'))
+	and (@Reference_Date >= '2026-12-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE = 'DEHAM')
+	and (@Origin_Port_UNCODE IN('ZAPLZ','ZAZBA'))
+	and (@Contract_Holder_TMS = 'DE310645')
+	and (@Named_account_TMS = 'DE820127')
+	and ((@Equipment_Size = '20' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Equipment_Type = 'HC'))
+
+		THEN '26-696GAC-DCE-02'
+
+---Free days: 14
+---Currency: EUR
+---Approved by: Līga ZARIŅA
+---Level 1 rate: 45
+
+	WHEN (@Service_Contract_Number IN('R22426098460455','26-696GAC'))
+	and (@Reference_Date >= '2026-12-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('DEBRV','ITGOA'))
+	and (@Origin_Port_UNCODE IN('ZADUR','ZAZBA'))
+	and (@Contract_Holder_TMS = 'DE807368')
+	and (@Named_account_TMS = 'DE129773')
+	and ((@Equipment_Size = '40' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Equipment_Type = 'HC'))
+
+		THEN '26-696GAC-DCE-03'
+
+---Free days: 25C
+---Currency: EUR
+---Approved by: Toms EGLĪTIS
+---Level 1 days: 3
+---Level 1 rate: 60
+---Level 2 rate: 75
+
+	WHEN (@Service_Contract_Number IN('R64926086024616','26-696GAC'))
+	and (@Reference_Date >= '2026-12-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('DEBRV','PLGDN'))
+	and (@Origin_Port_UNCODE = 'ZADUR')
+	and (@Contract_Holder_TMS = 'DE342946')
+	and (@Named_account_TMS = 'DE142709')
+	and ((@Equipment_Size = '20' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '20' and @Is_Operational_Reefer <> 1 and @Equipment_Type = 'RE'))
+
+		THEN '26-696GAC-DCE-04'
+
+---Free days: 21N
+---Currency: USD
+---Approved by: Līga ZARIŅA
+---Level 1 days: 4
+---Level 1 rate: 75
+---Level 2 days: 6
+---Level 2 rate: 105
+---Level 3 rate: 140
+
+	ELSE
+		NULL
+	END
+ELSE
+	NULL
+END
+
+
+-- FILE: 26-877WW-DMI.txt
+-- SYNTHETIC TRAINING EXCEPTIONS; agency=ZA; direction=Import
+-- No real contract numbers, accounts or MSC users are included.
+SELECT [exception_name]= CASE
+
+WHEN @IS_EXPORT = 1 THEN NULL
+WHEN @INVOICE_TYPE IN ('DEMURRAGE_IMPORT', 'DEMURRAGE_IMPORT_FULL')
+
+THEN CASE
+
+	WHEN (@Service_Contract_Number IN('R48126085457726','26-877WW'))
+	and (@Reference_Date >= '2026-12-31' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('ZAPLZ','ZAZBA'))
+	and (@Origin_Port_UNCODE = 'FRLEH')
+	and (@Contract_Holder_TMS = 'ZA408672')
+	and (@Named_account_TMS = 'ZA602584')
+	and ((@Equipment_Size = '40' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Is_Operational_Reefer <> 1 and @Equipment_Type = 'RE')
+	 or (@Equipment_Size = '40' and @Is_Operational_Reefer <> 1 and @Equipment_Type = 'HR'))
+
+		THEN '26-877WW-DMI-01'
+
+---Free days: 21
+---Currency: EUR
+---Approved by: Elīna KRŪMIŅA
+---Level 1 days: 3
+---Level 1 rate: 65
+---Level 2 days: 4
+---Level 2 rate: 95
+---Level 3 days: 5
+---Level 3 rate: 135
+---Level 4 rate: 190
+
+	WHEN (@Service_Contract_Number IN('R47926078287911','26-877WW'))
+	and (@Reference_Date >= '2026-12-31' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE = 'ZADUR')
+	and (@Origin_Port_UNCODE IN('DEHAM','ITGOA'))
+	and (@Contract_Holder_TMS = 'ZA416909')
+	and (@Named_account_TMS = 'ZA875685')
+	and ((@Equipment_Size = '40' and @Is_Operational_Reefer = 1 and @Equipment_Type = 'RE')
+	 or (@Equipment_Size = '40' and @Is_Operational_Reefer = 1 and @Equipment_Type = 'HR'))
+
+		THEN '26-877WW-DMI-02'
+
+---Free days: 7C
+---Currency: EUR
+---Approved by: Līga ZARIŅA
+---Level 1 days: 5
+---Level 1 rate: 80
+---Level 2 rate: 110
+
+	WHEN (@Service_Contract_Number IN('R55126033601920','26-877WW'))
+	and (@Reference_Date >= '2026-12-31' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('ZADUR','ZAZBA'))
+	and (@Origin_Port_UNCODE IN('BEANR','NLRTM'))
+	and (@Contract_Holder_TMS = 'ZA916448')
+	and (@Named_account_TMS = 'ZA486964')
+	and ((@Equipment_Size = '20' and @Equipment_Type = 'DV'))
+
+		THEN '26-877WW-DMI-03'
+
+---Free days: 15N
+---Currency: EUR
+---Approved by: Anna BĒRZIŅA
+---Level 1 days: 4
+---Level 1 rate: 50
+---Level 2 days: 7
+---Level 2 rate: 60
+---Level 3 rate: 100
+
+	WHEN (@Service_Contract_Number IN('R47726089134458','26-877WW'))
+	and (@Reference_Date >= '2026-12-31' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('ZADUR','ZAZBA'))
+	and (@Origin_Port_UNCODE = 'BEANR')
+	and (@Contract_Holder_TMS = 'ZA232369')
+	and (@Named_account_TMS = 'ZA242995')
+	and ((@Equipment_Size = '20' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Equipment_Type = 'HC'))
+
+		THEN '26-877WW-DMI-04'
+
+---Free days: 12
+---Approved by: Marta KALNIŅA
+
+	ELSE
+		NULL
+	END
+ELSE
+	NULL
+END

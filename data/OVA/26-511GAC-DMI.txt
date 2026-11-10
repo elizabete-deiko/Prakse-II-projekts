@@ -1,0 +1,89 @@
+-- SYNTHETIC TRAINING EXCEPTIONS; agency=US; direction=Import
+-- No real contract numbers, accounts or MSC users are included.
+SELECT [exception_name]= CASE
+
+WHEN @IS_EXPORT = 1 THEN NULL
+WHEN @INVOICE_TYPE IN ('DEMURRAGE_IMPORT', 'DEMURRAGE_IMPORT_FULL')
+
+THEN CASE
+
+	WHEN (@Service_Contract_Number IN('R18326029132380','26-511GAC'))
+	and (@Reference_Date >= '2026-12-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('USBOS','USJAX'))
+	and (@Origin_Port_UNCODE = 'PLGDN')
+	and (@Contract_Holder_TMS = 'US451131')
+	and (@Named_account_TMS = 'US161862')
+	and ((@Equipment_Size = '20' and @Equipment_Type = 'DV'))
+
+		THEN '26-511GAC-DMI-01'
+
+---Free days: 5N
+---Currency: USD
+---Approved by: Alma VĒTRA
+---Level 1 days: 3
+---Level 1 rate: 70
+---Level 2 days: 4
+---Level 2 rate: 100
+---Level 3 days: 5
+---Level 3 rate: 125
+---Level 4 rate: 175
+
+	WHEN (@Service_Contract_Number IN('R16426068109900','26-511GAC'))
+	and (@Reference_Date >= '2026-12-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE = 'USLGB')
+	and (@Origin_Port_UNCODE IN('DEHAM','FRLEH'))
+	and (@Contract_Holder_TMS = 'US310968')
+	and (@Named_account_TMS = 'US899062')
+	and ((@Equipment_Size = '20' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Equipment_Type = 'HC'))
+
+		THEN '26-511GAC-DMI-02'
+
+---Free days: 10
+---Currency: EUR
+---Approved by: Līga ZARIŅA
+---Level 1 days: 5
+---Level 1 rate: 80
+---Level 2 rate: 120
+
+	WHEN (@Service_Contract_Number IN('R44526118254919','26-511GAC'))
+	and (@Reference_Date >= '2026-12-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('USBAL','USMOB'))
+	and (@Origin_Port_UNCODE IN('DEBRV','DEHAM'))
+	and (@Contract_Holder_TMS = 'US775938')
+	and (@Named_account_TMS = 'US547641')
+	and ((@Equipment_Size = '40' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '40' and @Equipment_Type = 'HC'))
+
+		THEN '26-511GAC-DMI-03'
+
+---Free days: 28C
+---Currency: EUR
+---Approved by: Alma VĒTRA
+---Level 1 days: 4
+---Level 1 rate: 50
+---Level 2 days: 7
+---Level 2 rate: 65
+---Level 3 rate: 100
+
+	WHEN (@Service_Contract_Number IN('R72026046519706','26-511GAC'))
+	and (@Reference_Date >= '2026-12-01' and @Reference_Date < '2028-01-01')
+	and (@Destination_Port_UNCODE IN('USLAX','USOAK'))
+	and (@Origin_Port_UNCODE = 'FRLEH')
+	and (@Contract_Holder_TMS = 'US626782')
+	and (@Named_account_TMS = 'US904371')
+	and ((@Equipment_Size = '20' and @Equipment_Type = 'DV')
+	 or (@Equipment_Size = '20' and @Is_Operational_Reefer <> 1 and @Equipment_Type = 'RE'))
+
+		THEN '26-511GAC-DMI-04'
+
+---Free days: 5N
+---Approved by: Edgars LIEPA
+
+	ELSE
+		NULL
+	END
+ELSE
+	NULL
+END
