@@ -1,16 +1,15 @@
 from pathlib import Path
-from datacheck.parser import read_table, parse_tms, parse_mars, read_ova
+from datacheck.engine import analyse
 
 BASE = Path(__file__).resolve().parent
 
 
 def main():
-    tms = parse_tms(read_table(BASE / 'data/TMS.xlsx', 'TMS'))
-    mars = parse_mars(read_table(BASE / 'data/MARS.xlsx', 'MARS'))
-    ova = read_ova(BASE / 'data/OVA')
-    print(f'TMS līgumi: {len(tms)}')
-    print(f'OVA SQL noteikumi: {len(ova)}')
-    print(f'MARS izņēmumi: {len(mars)}')
+    result = analyse(BASE / 'data/TMS.xlsx', BASE / 'data/MARS.xlsx', BASE / 'data/OVA')
+    print(f"Pārbaudīti līgumi: {result.totals['TMS līgumi']}")
+    print(f"Parametru nesakritības: {len(result.issues)}")
+    for finding in result.issues[:5]:
+        print(finding['Līguma numurs'], finding['Sistēma'], finding['Parametrs'])
 
 
 if __name__ == '__main__':
