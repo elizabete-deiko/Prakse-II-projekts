@@ -142,6 +142,22 @@ def compare_mars(contract, ova_rule, mars_rows, issues):
         if expected != actual:
             add_issue(issues, contract, 'MARS', rate_name, expected, actual, exception_name)
 
+    for other in mars_rows[1:]:
+        same_dates = (first['valid_from'] == other['valid_from'] and
+                      first['valid_to'] == other['valid_to'])
+        overlap = (other['valid_from'] <= first['valid_to'] and
+                   first['valid_from'] <= other['valid_to'])
+
+        if same_dates:
+            add_issue(issues, contract, 'MARS', 'Dublēts izņēmums',
+                      '1 MARS ieraksts', f'{len(mars_rows)} vienādi ieraksti',
+                      exception_name,
+                      note='Vairāk nekā viena MARS rinda ar identisku Exception_Name un periodu.')
+        elif overlap:
+            add_issue(issues, contract, 'MARS', 'Pārklājoši derīguma periodi',
+                      '1 MARS derīguma periods',
+                      f'{len(mars_rows)} pārklājoši derīguma periodi', exception_name,
+                      note='Vienam Exception_Name ir vairāki pārklājoši derīguma periodi.')
 
 
 def make_statuses(contracts, matched, mars_by_name, issues):
@@ -212,6 +228,12 @@ def analyse(tms_path, mars_path, ova_path, agency=None, direction=None, as_of=No
         compare_ova(contract, ova_rule, issues)
         related_mars = mars_by_name.get(ova_rule['exception_name'], [])
         compare_mars(contract, ova_rule, related_mars, issues)
+
+    for contract in selected:
+        if contract['contract_number'] not in matched:
+            add_issue(issues, contract, 'OVA', 'Trūkst SQL nosacījuma',
+                      'Eksistē izņēmums', 'Nav izņēmuma',
+                      note='Neviena OVA SQL WHEN klauzula nav sasaistīta ar šo TMS līgumu.')
 
     priorities = {'Augsta': 0, 'Vidēja': 1, 'Zema': 2}
     issues.sort(key=lambda row: (
