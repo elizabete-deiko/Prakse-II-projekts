@@ -1,0 +1,2016 @@
+[
+  {
+    "rule_index": 0,
+    "agency": "US",
+    "direction": "Export",
+    "contract_number": "R79626078407408",
+    "service_contract": "26-688EUUS",
+    "exception_name": "26-688EUUS-DCE-01",
+    "file_name": "26-688EUUS-DCE.txt",
+    "holder": "DE867254",
+    "named": "DE737557",
+    "pols": [
+      "USPHL"
+    ],
+    "pods": [
+      "BEANR",
+      "DEHAM"
+    ],
+    "equip": [
+      [
+        40,
+        "DV",
+        0
+      ],
+      [
+        40,
+        "HC",
+        0
+      ]
+    ],
+    "valid_from": "2026-11-01",
+    "valid_to": "2027-12-31",
+    "free_days": 14,
+    "days_type": "C",
+    "approved_by": "Edgars LIEPA",
+    "currency": "",
+    "rates": {}
+  },
+  {
+    "rule_index": 1,
+    "agency": "US",
+    "direction": "Export",
+    "contract_number": "R82426026224792",
+    "service_contract": "26-688EUUS",
+    "exception_name": "26-688EUUS-DCE-02",
+    "file_name": "26-688EUUS-DCE.txt",
+    "holder": "DE396573",
+    "named": "DE925543",
+    "pols": [
+      "USBOS",
+      "USCHS"
+    ],
+    "pods": [
+      "NLRTM"
+    ],
+    "equip": [
+      [
+        20,
+        "DV",
+        0
+      ],
+      [
+        20,
+        "RE",
+        0
+      ]
+    ],
+    "valid_from": "2026-11-01",
+    "valid_to": "2027-12-31",
+    "free_days": 10,
+    "days_type": "N",
+    "approved_by": "Toms EGLĪTIS",
+    "currency": "EUR",
+    "rates": {
+      "l1_rate": 60
+    }
+  },
+  {
+    "rule_index": 2,
+    "agency": "US",
+    "direction": "Export",
+    "contract_number": "R68326045837918",
+    "service_contract": "26-688EUUS",
+    "exception_name": "26-688EUUS-DCE-03",
+    "file_name": "26-688EUUS-DCE.txt",
+    "holder": "DE348786",
+    "named": "DE978621",
+    "pols": [
+      "USOAK",
+      "USPHL"
+    ],
+    "pods": [
+      "DEBRV",
+      "NLRTM"
+    ],
+    "equip": [
+      [
+        40,
+        "DV",
+        0
+      ],
+      [
+        40,
+        "RE",
+        0
+      ],
+      [
+        40,
+        "HR",
+        0
+      ]
+    ],
+    "valid_from": "2026-11-01",
+    "valid_to": "2027-12-31",
+    "free_days": 5,
+    "days_type": "",
+    "approved_by": "Līga ZARIŅA",
+    "currency": "EUR",
+    "rates": {
+      "l1_days": 3,
+      "l1_rate": 50,
+      "l2_rate": 65
+    }
+  },
+  {
+    "rule_index": 3,
+    "agency": "US",
+    "direction": "Export",
+    "contract_number": "R16926089666924",
+    "service_contract": "26-688EUUS",
+    "exception_name": "26-688EUUS-DCE-04",
+    "file_name": "26-688EUUS-DCE.txt",
+    "holder": "DE957598",
+    "named": "DE583794",
+    "pols": [
+      "USCHS"
+    ],
+    "pods": [
+      "DEBRV",
+      "DEHAM"
+    ],
+    "equip": [
+      [
+        40,
+        "RE",
+        1
+      ],
+      [
+        40,
+        "HR",
+        1
+      ]
+    ],
+    "valid_from": "2026-11-01",
+    "valid_to": "2027-12-31",
+    "free_days": 25,
+    "days_type": "C",
+    "approved_by": "Līga ZARIŅA",
+    "currency": "EUR",
+    "rates": {
+      "l1_days": 4,
+      "l1_rate": 70,
+      "l2_days": 6,
+      "l2_rate": 110,
+      "l3_rate": 145
+    }
+  },
+  {
+    "rule_index": 4,
+    "agency": "US",
+    "direction": "Import",
+    "contract_number": "R18726109119597",
+    "service_contract": "26-247GAC",
+    "exception_name": "26-247GAC-DMI-01",
+    "file_name": "26-247GAC-DMI.txt",
+    "holder": "US838116",
+    "named": "US699892",
+    "pols": [
+      "NLRTM"
+    ],
+    "pods": [
+      "USBAL",
+      "USBOS"
+    ],
+    "equip": [
+      [
+        20,
+        "DV",
+        0
+      ]
+    ],
+    "valid_from": "2026-12-01",
+    "valid_to": "2027-12-31",
+    "free_days": 20,
+    "days_type": "N",
+    "approved_by": "Alma VĒTRA",
+    "currency": "",
+    "rates": {}
+  },
+  {
+    "rule_index": 5,
+    "agency": "US",
+    "direction": "Import",
+    "contract_number": "R50226051135729",
+    "service_contract": "26-247GAC",
+    "exception_name": "26-247GAC-DMI-02",
+    "file_name": "26-247GAC-DMI.txt",
+    "holder": "US947822",
+    "named": "US542932",
+    "pols": [
+      "BEANR",
+      "DEHAM"
+    ],
+    "pods": [
+      "USHOU"
+    ],
+    "equip": [
+      [
+        20,
+        "DV",
+        0
+      ],
+      [
+        40,
+        "DV",
+        0
+      ],
+      [
+        40,
+        "HC",
+        0
+      ]
+    ],
+    "valid_from": "2026-12-01",
+    "valid_to": "2027-12-31",
+    "free_days": 28,
+    "days_type": "",
+    "approved_by": "Marta KALNIŅA",
+    "currency": "USD",
+    "rates": {
+      "l1_days": 3,
+      "l1_rate": 65,
+      "l2_rate": 90
+    }
+  },
+  {
+    "rule_index": 6,
+    "agency": "US",
+    "direction": "Import",
+    "contract_number": "R38326048479331",
+    "service_contract": "26-247GAC",
+    "exception_name": "26-247GAC-DMI-03",
+    "file_name": "26-247GAC-DMI.txt",
+    "holder": "US543074",
+    "named": "US561036",
+    "pols": [
+      "BEANR",
+      "PLGDN"
+    ],
+    "pods": [
+      "USBAL",
+      "USOAK"
+    ],
+    "equip": [
+      [
+        40,
+        "DV",
+        0
+      ],
+      [
+        40,
+        "HC",
+        0
+      ]
+    ],
+    "valid_from": "2026-12-01",
+    "valid_to": "2027-12-31",
+    "free_days": 15,
+    "days_type": "C",
+    "approved_by": "Edgars LIEPA",
+    "currency": "EUR",
+    "rates": {
+      "l1_days": 4,
+      "l1_rate": 45,
+      "l2_days": 7,
+      "l2_rate": 70,
+      "l3_rate": 100
+    }
+  },
+  {
+    "rule_index": 7,
+    "agency": "US",
+    "direction": "Import",
+    "contract_number": "R73126122345139",
+    "service_contract": "26-247GAC",
+    "exception_name": "26-247GAC-DMI-04",
+    "file_name": "26-247GAC-DMI.txt",
+    "holder": "US694246",
+    "named": "US429992",
+    "pols": [
+      "BEANR"
+    ],
+    "pods": [
+      "USHOU",
+      "USPHL"
+    ],
+    "equip": [
+      [
+        20,
+        "DV",
+        0
+      ],
+      [
+        20,
+        "RE",
+        0
+      ]
+    ],
+    "valid_from": "2026-12-01",
+    "valid_to": "2027-12-31",
+    "free_days": 28,
+    "days_type": "N",
+    "approved_by": "Rihards OZOLS",
+    "currency": "USD",
+    "rates": {
+      "l1_days": 4,
+      "l1_rate": 50,
+      "l2_rate": 70
+    }
+  },
+  {
+    "rule_index": 8,
+    "agency": "BR",
+    "direction": "Export",
+    "contract_number": "R43426091225043",
+    "service_contract": "26-864WW",
+    "exception_name": "26-864WW-DCE-01",
+    "file_name": "26-864WW-DCE.txt",
+    "holder": "DE539366",
+    "named": "DE811185",
+    "pols": [
+      "BRRIO"
+    ],
+    "pods": [
+      "ITBRI",
+      "ITGOA"
+    ],
+    "equip": [
+      [
+        40,
+        "DV",
+        0
+      ],
+      [
+        40,
+        "RE",
+        0
+      ],
+      [
+        40,
+        "HR",
+        0
+      ]
+    ],
+    "valid_from": "2026-12-31",
+    "valid_to": "2027-12-31",
+    "free_days": 20,
+    "days_type": "",
+    "approved_by": "Elīna KRŪMIŅA",
+    "currency": "EUR",
+    "rates": {
+      "l1_days": 4,
+      "l1_rate": 50,
+      "l2_rate": 70
+    }
+  },
+  {
+    "rule_index": 9,
+    "agency": "BR",
+    "direction": "Export",
+    "contract_number": "R83126101799839",
+    "service_contract": "26-864WW",
+    "exception_name": "26-864WW-DCE-02",
+    "file_name": "26-864WW-DCE.txt",
+    "holder": "DE497525",
+    "named": "DE703706",
+    "pols": [
+      "BRPNG",
+      "BRSSZ"
+    ],
+    "pods": [
+      "NLRTM"
+    ],
+    "equip": [
+      [
+        40,
+        "RE",
+        1
+      ],
+      [
+        40,
+        "HR",
+        1
+      ]
+    ],
+    "valid_from": "2026-12-31",
+    "valid_to": "2027-12-31",
+    "free_days": 20,
+    "days_type": "C",
+    "approved_by": "Elīna KRŪMIŅA",
+    "currency": "EUR",
+    "rates": {
+      "l1_days": 4,
+      "l1_rate": 50,
+      "l2_days": 3,
+      "l2_rate": 70,
+      "l3_days": 5,
+      "l3_rate": 95,
+      "l4_rate": 145
+    }
+  },
+  {
+    "rule_index": 10,
+    "agency": "BR",
+    "direction": "Export",
+    "contract_number": "R42426042050803",
+    "service_contract": "26-864WW",
+    "exception_name": "26-864WW-DCE-03",
+    "file_name": "26-864WW-DCE.txt",
+    "holder": "DE250547",
+    "named": "DE470401",
+    "pols": [
+      "BRPNG",
+      "BRRIO"
+    ],
+    "pods": [
+      "DEHAM",
+      "ITGOA"
+    ],
+    "equip": [
+      [
+        20,
+        "DV",
+        0
+      ]
+    ],
+    "valid_from": "2026-12-31",
+    "valid_to": "2027-12-31",
+    "free_days": 28,
+    "days_type": "N",
+    "approved_by": "Toms EGLĪTIS",
+    "currency": "EUR",
+    "rates": {
+      "l1_days": 3,
+      "l1_rate": 65,
+      "l2_rate": 70
+    }
+  },
+  {
+    "rule_index": 11,
+    "agency": "BR",
+    "direction": "Export",
+    "contract_number": "R28226059815006",
+    "service_contract": "26-864WW",
+    "exception_name": "26-864WW-DCE-04",
+    "file_name": "26-864WW-DCE.txt",
+    "holder": "DE411564",
+    "named": "DE354821",
+    "pols": [
+      "BRSSZ"
+    ],
+    "pods": [
+      "ITBRI",
+      "ITGOA"
+    ],
+    "equip": [
+      [
+        20,
+        "DV",
+        0
+      ],
+      [
+        40,
+        "DV",
+        0
+      ],
+      [
+        40,
+        "HC",
+        0
+      ]
+    ],
+    "valid_from": "2026-12-31",
+    "valid_to": "2027-12-31",
+    "free_days": 21,
+    "days_type": "",
+    "approved_by": "Līga ZARIŅA",
+    "currency": "EUR",
+    "rates": {
+      "l1_days": 4,
+      "l1_rate": 70,
+      "l2_days": 6,
+      "l2_rate": 95,
+      "l3_rate": 145
+    }
+  },
+  {
+    "rule_index": 12,
+    "agency": "BR",
+    "direction": "Import",
+    "contract_number": "R55126077603646",
+    "service_contract": "26-222EUUS",
+    "exception_name": "26-222EUUS-DMI-01",
+    "file_name": "26-222EUUS-DMI.txt",
+    "holder": "BR862251",
+    "named": "BR453489",
+    "pols": [
+      "ITBRI"
+    ],
+    "pods": [
+      "BRRIO",
+      "BRSSZ"
+    ],
+    "equip": [
+      [
+        40,
+        "DV",
+        0
+      ],
+      [
+        40,
+        "HC",
+        0
+      ]
+    ],
+    "valid_from": "2026-11-01",
+    "valid_to": "2027-12-31",
+    "free_days": 15,
+    "days_type": "C",
+    "approved_by": "Toms EGLĪTIS",
+    "currency": "EUR",
+    "rates": {
+      "l1_days": 3,
+      "l1_rate": 65,
+      "l2_days": 4,
+      "l2_rate": 95,
+      "l3_days": 5,
+      "l3_rate": 130,
+      "l4_rate": 180
+    }
+  },
+  {
+    "rule_index": 13,
+    "agency": "BR",
+    "direction": "Import",
+    "contract_number": "R61226125058197",
+    "service_contract": "26-222EUUS",
+    "exception_name": "26-222EUUS-DMI-02",
+    "file_name": "26-222EUUS-DMI.txt",
+    "holder": "BR146200",
+    "named": "BR146982",
+    "pols": [
+      "DEBRV",
+      "DEHAM"
+    ],
+    "pods": [
+      "BRSSZ"
+    ],
+    "equip": [
+      [
+        20,
+        "DV",
+        0
+      ],
+      [
+        20,
+        "RE",
+        0
+      ]
+    ],
+    "valid_from": "2026-11-01",
+    "valid_to": "2027-12-31",
+    "free_days": 15,
+    "days_type": "N",
+    "approved_by": "Elīna KRŪMIŅA",
+    "currency": "USD",
+    "rates": {
+      "l1_days": 5,
+      "l1_rate": 90,
+      "l2_rate": 110
+    }
+  },
+  {
+    "rule_index": 14,
+    "agency": "BR",
+    "direction": "Import",
+    "contract_number": "R30926044489192",
+    "service_contract": "26-222EUUS",
+    "exception_name": "26-222EUUS-DMI-03",
+    "file_name": "26-222EUUS-DMI.txt",
+    "holder": "BR911498",
+    "named": "BR585948",
+    "pols": [
+      "ITGOA",
+      "PLGDN"
+    ],
+    "pods": [
+      "BRPNG",
+      "BRRIO"
+    ],
+    "equip": [
+      [
+        40,
+        "DV",
+        0
+      ],
+      [
+        40,
+        "RE",
+        0
+      ],
+      [
+        40,
+        "HR",
+        0
+      ]
+    ],
+    "valid_from": "2026-11-01",
+    "valid_to": "2027-12-31",
+    "free_days": 25,
+    "days_type": "",
+    "approved_by": "Elīna KRŪMIŅA",
+    "currency": "EUR",
+    "rates": {
+      "l1_days": 4,
+      "l1_rate": 50,
+      "l2_days": 7,
+      "l2_rate": 70,
+      "l3_rate": 100
+    }
+  },
+  {
+    "rule_index": 15,
+    "agency": "BR",
+    "direction": "Import",
+    "contract_number": "R27226045033377",
+    "service_contract": "26-222EUUS",
+    "exception_name": "26-222EUUS-DMI-04",
+    "file_name": "26-222EUUS-DMI.txt",
+    "holder": "BR152623",
+    "named": "BR173188",
+    "pols": [
+      "DEHAM"
+    ],
+    "pods": [
+      "BRRIO",
+      "BRSSZ"
+    ],
+    "equip": [
+      [
+        40,
+        "RE",
+        1
+      ],
+      [
+        40,
+        "HR",
+        1
+      ]
+    ],
+    "valid_from": "2026-11-01",
+    "valid_to": "2027-12-31",
+    "free_days": 20,
+    "days_type": "C",
+    "approved_by": "Anna BĒRZIŅA",
+    "currency": "",
+    "rates": {}
+  },
+  {
+    "rule_index": 16,
+    "agency": "ZA",
+    "direction": "Export",
+    "contract_number": "R95426022853746",
+    "service_contract": "26-195GAC",
+    "exception_name": "26-195GAC-DCE-01",
+    "file_name": "26-195GAC-DCE.txt",
+    "holder": "DE798249",
+    "named": "DE979843",
+    "pols": [
+      "ZAPLZ"
+    ],
+    "pods": [
+      "DEHAM",
+      "FRLEH"
+    ],
+    "equip": [
+      [
+        20,
+        "DV",
+        0
+      ]
+    ],
+    "valid_from": "2026-12-01",
+    "valid_to": "2027-12-31",
+    "free_days": 21,
+    "days_type": "N",
+    "approved_by": "Elīna KRŪMIŅA",
+    "currency": "",
+    "rates": {}
+  },
+  {
+    "rule_index": 17,
+    "agency": "ZA",
+    "direction": "Export",
+    "contract_number": "R20926093669519",
+    "service_contract": "26-195GAC",
+    "exception_name": "26-195GAC-DCE-02",
+    "file_name": "26-195GAC-DCE.txt",
+    "holder": "DE671745",
+    "named": "DE480715",
+    "pols": [
+      "ZADUR",
+      "ZAZBA"
+    ],
+    "pods": [
+      "NLRTM"
+    ],
+    "equip": [
+      [
+        20,
+        "DV",
+        0
+      ],
+      [
+        40,
+        "DV",
+        0
+      ],
+      [
+        40,
+        "HC",
+        0
+      ]
+    ],
+    "valid_from": "2026-12-01",
+    "valid_to": "2027-12-31",
+    "free_days": 7,
+    "days_type": "",
+    "approved_by": "Marta KALNIŅA",
+    "currency": "EUR",
+    "rates": {
+      "l1_rate": 60
+    }
+  },
+  {
+    "rule_index": 18,
+    "agency": "ZA",
+    "direction": "Export",
+    "contract_number": "R71926099034904",
+    "service_contract": "26-195GAC",
+    "exception_name": "26-195GAC-DCE-03",
+    "file_name": "26-195GAC-DCE.txt",
+    "holder": "DE768930",
+    "named": "DE639011",
+    "pols": [
+      "ZADUR",
+      "ZAPLZ"
+    ],
+    "pods": [
+      "ITGOA",
+      "PLGDN"
+    ],
+    "equip": [
+      [
+        40,
+        "DV",
+        0
+      ],
+      [
+        40,
+        "HC",
+        0
+      ]
+    ],
+    "valid_from": "2026-12-01",
+    "valid_to": "2027-12-31",
+    "free_days": 18,
+    "days_type": "C",
+    "approved_by": "Toms EGLĪTIS",
+    "currency": "USD",
+    "rates": {
+      "l1_days": 3,
+      "l1_rate": 55,
+      "l2_rate": 80
+    }
+  },
+  {
+    "rule_index": 19,
+    "agency": "ZA",
+    "direction": "Export",
+    "contract_number": "R72226119544814",
+    "service_contract": "26-195GAC",
+    "exception_name": "26-195GAC-DCE-04",
+    "file_name": "26-195GAC-DCE.txt",
+    "holder": "DE654570",
+    "named": "DE927939",
+    "pols": [
+      "ZADUR"
+    ],
+    "pods": [
+      "DEHAM",
+      "ITGOA"
+    ],
+    "equip": [
+      [
+        20,
+        "DV",
+        0
+      ],
+      [
+        20,
+        "RE",
+        0
+      ]
+    ],
+    "valid_from": "2026-12-01",
+    "valid_to": "2027-12-31",
+    "free_days": 28,
+    "days_type": "N",
+    "approved_by": "Edgars LIEPA",
+    "currency": "EUR",
+    "rates": {
+      "l1_days": 4,
+      "l1_rate": 75,
+      "l2_days": 6,
+      "l2_rate": 105,
+      "l3_rate": 145
+    }
+  },
+  {
+    "rule_index": 20,
+    "agency": "ZA",
+    "direction": "Import",
+    "contract_number": "R93626021759116",
+    "service_contract": "26-891WW",
+    "exception_name": "26-891WW-DMI-01",
+    "file_name": "26-891WW-DMI.txt",
+    "holder": "ZA302097",
+    "named": "ZA937826",
+    "pols": [
+      "BEANR"
+    ],
+    "pods": [
+      "ZADUR",
+      "ZAPLZ"
+    ],
+    "equip": [
+      [
+        40,
+        "DV",
+        0
+      ],
+      [
+        40,
+        "RE",
+        0
+      ],
+      [
+        40,
+        "HR",
+        0
+      ]
+    ],
+    "valid_from": "2026-12-31",
+    "valid_to": "2027-12-31",
+    "free_days": 7,
+    "days_type": "",
+    "approved_by": "Rihards OZOLS",
+    "currency": "USD",
+    "rates": {
+      "l1_days": 3,
+      "l1_rate": 70,
+      "l2_days": 4,
+      "l2_rate": 100,
+      "l3_days": 5,
+      "l3_rate": 130,
+      "l4_rate": 190
+    }
+  },
+  {
+    "rule_index": 21,
+    "agency": "ZA",
+    "direction": "Import",
+    "contract_number": "R73826043960469",
+    "service_contract": "26-891WW",
+    "exception_name": "26-891WW-DMI-02",
+    "file_name": "26-891WW-DMI.txt",
+    "holder": "ZA400070",
+    "named": "ZA234166",
+    "pols": [
+      "DEBRV",
+      "ITBRI"
+    ],
+    "pods": [
+      "ZAPLZ"
+    ],
+    "equip": [
+      [
+        40,
+        "RE",
+        1
+      ],
+      [
+        40,
+        "HR",
+        1
+      ]
+    ],
+    "valid_from": "2026-12-31",
+    "valid_to": "2027-12-31",
+    "free_days": 14,
+    "days_type": "C",
+    "approved_by": "Alma VĒTRA",
+    "currency": "EUR",
+    "rates": {
+      "l1_days": 5,
+      "l1_rate": 85,
+      "l2_rate": 120
+    }
+  },
+  {
+    "rule_index": 22,
+    "agency": "ZA",
+    "direction": "Import",
+    "contract_number": "R28326051758444",
+    "service_contract": "26-891WW",
+    "exception_name": "26-891WW-DMI-03",
+    "file_name": "26-891WW-DMI.txt",
+    "holder": "ZA277185",
+    "named": "ZA313647",
+    "pols": [
+      "ITGOA",
+      "NLRTM"
+    ],
+    "pods": [
+      "ZADUR",
+      "ZAPLZ"
+    ],
+    "equip": [
+      [
+        20,
+        "DV",
+        0
+      ]
+    ],
+    "valid_from": "2026-12-31",
+    "valid_to": "2027-12-31",
+    "free_days": 20,
+    "days_type": "N",
+    "approved_by": "Marta KALNIŅA",
+    "currency": "EUR",
+    "rates": {
+      "l1_days": 4,
+      "l1_rate": 50,
+      "l2_days": 7,
+      "l2_rate": 65,
+      "l3_rate": 95
+    }
+  },
+  {
+    "rule_index": 23,
+    "agency": "ZA",
+    "direction": "Import",
+    "contract_number": "R18426105643460",
+    "service_contract": "26-891WW",
+    "exception_name": "26-891WW-DMI-04",
+    "file_name": "26-891WW-DMI.txt",
+    "holder": "ZA791608",
+    "named": "ZA343403",
+    "pols": [
+      "NLRTM"
+    ],
+    "pods": [
+      "ZADUR",
+      "ZAZBA"
+    ],
+    "equip": [
+      [
+        20,
+        "DV",
+        0
+      ],
+      [
+        40,
+        "DV",
+        0
+      ],
+      [
+        40,
+        "HC",
+        0
+      ]
+    ],
+    "valid_from": "2026-12-31",
+    "valid_to": "2027-12-31",
+    "free_days": 10,
+    "days_type": "",
+    "approved_by": "Alma VĒTRA",
+    "currency": "",
+    "rates": {}
+  },
+  {
+    "rule_index": 24,
+    "agency": "US",
+    "direction": "Export",
+    "contract_number": "R48626088720535",
+    "service_contract": "26-951EUUS",
+    "exception_name": "26-951EUUS-DCE-01",
+    "file_name": "26-951EUUS-DCE.txt",
+    "holder": "DE687880",
+    "named": "DE555504",
+    "pols": [
+      "USMOB"
+    ],
+    "pods": [
+      "ITBRI",
+      "NLRTM"
+    ],
+    "equip": [
+      [
+        40,
+        "DV",
+        0
+      ],
+      [
+        40,
+        "HC",
+        0
+      ]
+    ],
+    "valid_from": "2026-11-01",
+    "valid_to": "2027-12-31",
+    "free_days": 5,
+    "days_type": "C",
+    "approved_by": "Edgars LIEPA",
+    "currency": "",
+    "rates": {}
+  },
+  {
+    "rule_index": 25,
+    "agency": "US",
+    "direction": "Export",
+    "contract_number": "R77726107658687",
+    "service_contract": "26-951EUUS",
+    "exception_name": "26-951EUUS-DCE-02",
+    "file_name": "26-951EUUS-DCE.txt",
+    "holder": "DE331551",
+    "named": "DE940296",
+    "pols": [
+      "USMOB",
+      "USPHL"
+    ],
+    "pods": [
+      "ITGOA"
+    ],
+    "equip": [
+      [
+        20,
+        "DV",
+        0
+      ],
+      [
+        20,
+        "RE",
+        0
+      ]
+    ],
+    "valid_from": "2026-11-01",
+    "valid_to": "2027-12-31",
+    "free_days": 18,
+    "days_type": "N",
+    "approved_by": "Līga ZARIŅA",
+    "currency": "USD",
+    "rates": {
+      "l1_rate": 50
+    }
+  },
+  {
+    "rule_index": 26,
+    "agency": "US",
+    "direction": "Export",
+    "contract_number": "R16426097349190",
+    "service_contract": "26-951EUUS",
+    "exception_name": "26-951EUUS-DCE-03",
+    "file_name": "26-951EUUS-DCE.txt",
+    "holder": "DE402580",
+    "named": "DE693802",
+    "pols": [
+      "USHOU",
+      "USSEA"
+    ],
+    "pods": [
+      "FRLEH",
+      "PLGDN"
+    ],
+    "equip": [
+      [
+        40,
+        "DV",
+        0
+      ],
+      [
+        40,
+        "RE",
+        0
+      ],
+      [
+        40,
+        "HR",
+        0
+      ]
+    ],
+    "valid_from": "2026-11-01",
+    "valid_to": "2027-12-31",
+    "free_days": 5,
+    "days_type": "",
+    "approved_by": "Alma VĒTRA",
+    "currency": "EUR",
+    "rates": {
+      "l1_days": 3,
+      "l1_rate": 50,
+      "l2_rate": 80
+    }
+  },
+  {
+    "rule_index": 27,
+    "agency": "US",
+    "direction": "Export",
+    "contract_number": "R88226123706778",
+    "service_contract": "26-951EUUS",
+    "exception_name": "26-951EUUS-DCE-04",
+    "file_name": "26-951EUUS-DCE.txt",
+    "holder": "DE539342",
+    "named": "DE338850",
+    "pols": [
+      "USHOU"
+    ],
+    "pods": [
+      "BEANR",
+      "PLGDN"
+    ],
+    "equip": [
+      [
+        40,
+        "RE",
+        1
+      ],
+      [
+        40,
+        "HR",
+        1
+      ]
+    ],
+    "valid_from": "2026-11-01",
+    "valid_to": "2027-12-31",
+    "free_days": 25,
+    "days_type": "C",
+    "approved_by": "Elīna KRŪMIŅA",
+    "currency": "EUR",
+    "rates": {
+      "l1_days": 4,
+      "l1_rate": 70,
+      "l2_days": 6,
+      "l2_rate": 105,
+      "l3_rate": 135
+    }
+  },
+  {
+    "rule_index": 28,
+    "agency": "US",
+    "direction": "Import",
+    "contract_number": "R18326029132380",
+    "service_contract": "26-511GAC",
+    "exception_name": "26-511GAC-DMI-01",
+    "file_name": "26-511GAC-DMI.txt",
+    "holder": "US451131",
+    "named": "US161862",
+    "pols": [
+      "PLGDN"
+    ],
+    "pods": [
+      "USBOS",
+      "USJAX"
+    ],
+    "equip": [
+      [
+        20,
+        "DV",
+        0
+      ]
+    ],
+    "valid_from": "2026-12-01",
+    "valid_to": "2027-12-31",
+    "free_days": 5,
+    "days_type": "N",
+    "approved_by": "Alma VĒTRA",
+    "currency": "USD",
+    "rates": {
+      "l1_days": 3,
+      "l1_rate": 70,
+      "l2_days": 4,
+      "l2_rate": 100,
+      "l3_days": 5,
+      "l3_rate": 125,
+      "l4_rate": 175
+    }
+  },
+  {
+    "rule_index": 29,
+    "agency": "US",
+    "direction": "Import",
+    "contract_number": "R16426068109900",
+    "service_contract": "26-511GAC",
+    "exception_name": "26-511GAC-DMI-02",
+    "file_name": "26-511GAC-DMI.txt",
+    "holder": "US310968",
+    "named": "US899062",
+    "pols": [
+      "DEHAM",
+      "FRLEH"
+    ],
+    "pods": [
+      "USLGB"
+    ],
+    "equip": [
+      [
+        20,
+        "DV",
+        0
+      ],
+      [
+        40,
+        "DV",
+        0
+      ],
+      [
+        40,
+        "HC",
+        0
+      ]
+    ],
+    "valid_from": "2026-12-01",
+    "valid_to": "2027-12-31",
+    "free_days": 10,
+    "days_type": "",
+    "approved_by": "Līga ZARIŅA",
+    "currency": "EUR",
+    "rates": {
+      "l1_days": 5,
+      "l1_rate": 80,
+      "l2_rate": 120
+    }
+  },
+  {
+    "rule_index": 30,
+    "agency": "US",
+    "direction": "Import",
+    "contract_number": "R44526118254919",
+    "service_contract": "26-511GAC",
+    "exception_name": "26-511GAC-DMI-03",
+    "file_name": "26-511GAC-DMI.txt",
+    "holder": "US775938",
+    "named": "US547641",
+    "pols": [
+      "DEBRV",
+      "DEHAM"
+    ],
+    "pods": [
+      "USBAL",
+      "USMOB"
+    ],
+    "equip": [
+      [
+        40,
+        "DV",
+        0
+      ],
+      [
+        40,
+        "HC",
+        0
+      ]
+    ],
+    "valid_from": "2026-12-01",
+    "valid_to": "2027-12-31",
+    "free_days": 28,
+    "days_type": "C",
+    "approved_by": "Alma VĒTRA",
+    "currency": "EUR",
+    "rates": {
+      "l1_days": 4,
+      "l1_rate": 50,
+      "l2_days": 7,
+      "l2_rate": 65,
+      "l3_rate": 100
+    }
+  },
+  {
+    "rule_index": 31,
+    "agency": "US",
+    "direction": "Import",
+    "contract_number": "R72026046519706",
+    "service_contract": "26-511GAC",
+    "exception_name": "26-511GAC-DMI-04",
+    "file_name": "26-511GAC-DMI.txt",
+    "holder": "US626782",
+    "named": "US904371",
+    "pols": [
+      "FRLEH"
+    ],
+    "pods": [
+      "USLAX",
+      "USOAK"
+    ],
+    "equip": [
+      [
+        20,
+        "DV",
+        0
+      ],
+      [
+        20,
+        "RE",
+        0
+      ]
+    ],
+    "valid_from": "2026-12-01",
+    "valid_to": "2027-12-31",
+    "free_days": 5,
+    "days_type": "N",
+    "approved_by": "Edgars LIEPA",
+    "currency": "",
+    "rates": {}
+  },
+  {
+    "rule_index": 32,
+    "agency": "BR",
+    "direction": "Export",
+    "contract_number": "R51126101222961",
+    "service_contract": "26-669WW",
+    "exception_name": "26-669WW-DCE-01",
+    "file_name": "26-669WW-DCE.txt",
+    "holder": "DE550687",
+    "named": "DE385356",
+    "pols": [
+      "BRPNG"
+    ],
+    "pods": [
+      "ITBRI",
+      "NLRTM"
+    ],
+    "equip": [
+      [
+        40,
+        "DV",
+        0
+      ],
+      [
+        40,
+        "RE",
+        0
+      ],
+      [
+        40,
+        "HR",
+        0
+      ]
+    ],
+    "valid_from": "2026-12-31",
+    "valid_to": "2027-12-31",
+    "free_days": 25,
+    "days_type": "",
+    "approved_by": "Edgars LIEPA",
+    "currency": "",
+    "rates": {}
+  },
+  {
+    "rule_index": 33,
+    "agency": "BR",
+    "direction": "Export",
+    "contract_number": "R68326109007059",
+    "service_contract": "26-669WW",
+    "exception_name": "26-669WW-DCE-02",
+    "file_name": "26-669WW-DCE.txt",
+    "holder": "DE597562",
+    "named": "DE690216",
+    "pols": [
+      "BRPNG",
+      "BRSSZ"
+    ],
+    "pods": [
+      "ITGOA"
+    ],
+    "equip": [
+      [
+        40,
+        "RE",
+        1
+      ],
+      [
+        40,
+        "HR",
+        1
+      ]
+    ],
+    "valid_from": "2026-12-31",
+    "valid_to": "2027-12-31",
+    "free_days": 25,
+    "days_type": "C",
+    "approved_by": "Edgars LIEPA",
+    "currency": "EUR",
+    "rates": {
+      "l1_rate": 50
+    }
+  },
+  {
+    "rule_index": 34,
+    "agency": "BR",
+    "direction": "Export",
+    "contract_number": "R59426114852852",
+    "service_contract": "26-669WW",
+    "exception_name": "26-669WW-DCE-03",
+    "file_name": "26-669WW-DCE.txt",
+    "holder": "DE210950",
+    "named": "DE630456",
+    "pols": [
+      "BRPNG",
+      "BRSSZ"
+    ],
+    "pods": [
+      "DEBRV",
+      "FRLEH"
+    ],
+    "equip": [
+      [
+        20,
+        "DV",
+        0
+      ]
+    ],
+    "valid_from": "2026-12-31",
+    "valid_to": "2027-12-31",
+    "free_days": 20,
+    "days_type": "N",
+    "approved_by": "Rihards OZOLS",
+    "currency": "EUR",
+    "rates": {
+      "l1_days": 3,
+      "l1_rate": 55,
+      "l2_rate": 75
+    }
+  },
+  {
+    "rule_index": 35,
+    "agency": "BR",
+    "direction": "Export",
+    "contract_number": "R24326054226746",
+    "service_contract": "26-669WW",
+    "exception_name": "26-669WW-DCE-04",
+    "file_name": "26-669WW-DCE.txt",
+    "holder": "DE350364",
+    "named": "DE940517",
+    "pols": [
+      "BRPNG"
+    ],
+    "pods": [
+      "FRLEH",
+      "ITBRI"
+    ],
+    "equip": [
+      [
+        20,
+        "DV",
+        0
+      ],
+      [
+        40,
+        "DV",
+        0
+      ],
+      [
+        40,
+        "HC",
+        0
+      ]
+    ],
+    "valid_from": "2026-12-31",
+    "valid_to": "2027-12-31",
+    "free_days": 28,
+    "days_type": "",
+    "approved_by": "Rihards OZOLS",
+    "currency": "EUR",
+    "rates": {
+      "l1_days": 4,
+      "l1_rate": 75,
+      "l2_days": 6,
+      "l2_rate": 100,
+      "l3_rate": 145
+    }
+  },
+  {
+    "rule_index": 36,
+    "agency": "BR",
+    "direction": "Import",
+    "contract_number": "R18526071119235",
+    "service_contract": "26-970EUUS",
+    "exception_name": "26-970EUUS-DMI-01",
+    "file_name": "26-970EUUS-DMI.txt",
+    "holder": "BR443171",
+    "named": "BR111419",
+    "pols": [
+      "DEBRV"
+    ],
+    "pods": [
+      "BRRIO",
+      "BRSSZ"
+    ],
+    "equip": [
+      [
+        40,
+        "DV",
+        0
+      ],
+      [
+        40,
+        "HC",
+        0
+      ]
+    ],
+    "valid_from": "2026-11-01",
+    "valid_to": "2027-12-31",
+    "free_days": 18,
+    "days_type": "C",
+    "approved_by": "Anna BĒRZIŅA",
+    "currency": "USD",
+    "rates": {
+      "l1_days": 3,
+      "l1_rate": 65,
+      "l2_days": 4,
+      "l2_rate": 85,
+      "l3_days": 5,
+      "l3_rate": 130,
+      "l4_rate": 185
+    }
+  },
+  {
+    "rule_index": 37,
+    "agency": "BR",
+    "direction": "Import",
+    "contract_number": "R53526121949471",
+    "service_contract": "26-970EUUS",
+    "exception_name": "26-970EUUS-DMI-02",
+    "file_name": "26-970EUUS-DMI.txt",
+    "holder": "BR724787",
+    "named": "BR545198",
+    "pols": [
+      "DEBRV",
+      "FRLEH"
+    ],
+    "pods": [
+      "BRSSZ"
+    ],
+    "equip": [
+      [
+        20,
+        "DV",
+        0
+      ],
+      [
+        20,
+        "RE",
+        0
+      ]
+    ],
+    "valid_from": "2026-11-01",
+    "valid_to": "2027-12-31",
+    "free_days": 28,
+    "days_type": "N",
+    "approved_by": "Marta KALNIŅA",
+    "currency": "USD",
+    "rates": {
+      "l1_days": 5,
+      "l1_rate": 75,
+      "l2_rate": 115
+    }
+  },
+  {
+    "rule_index": 38,
+    "agency": "BR",
+    "direction": "Import",
+    "contract_number": "R14726063148959",
+    "service_contract": "26-970EUUS",
+    "exception_name": "26-970EUUS-DMI-03",
+    "file_name": "26-970EUUS-DMI.txt",
+    "holder": "BR567994",
+    "named": "BR538313",
+    "pols": [
+      "DEBRV",
+      "ITBRI"
+    ],
+    "pods": [
+      "BRRIO",
+      "BRSSZ"
+    ],
+    "equip": [
+      [
+        40,
+        "DV",
+        0
+      ],
+      [
+        40,
+        "RE",
+        0
+      ],
+      [
+        40,
+        "HR",
+        0
+      ]
+    ],
+    "valid_from": "2026-11-01",
+    "valid_to": "2027-12-31",
+    "free_days": 28,
+    "days_type": "",
+    "approved_by": "Anna BĒRZIŅA",
+    "currency": "USD",
+    "rates": {
+      "l1_days": 4,
+      "l1_rate": 40,
+      "l2_days": 7,
+      "l2_rate": 65,
+      "l3_rate": 105
+    }
+  },
+  {
+    "rule_index": 39,
+    "agency": "BR",
+    "direction": "Import",
+    "contract_number": "R86226079325168",
+    "service_contract": "26-970EUUS",
+    "exception_name": "26-970EUUS-DMI-04",
+    "file_name": "26-970EUUS-DMI.txt",
+    "holder": "BR663610",
+    "named": "BR368028",
+    "pols": [
+      "DEHAM"
+    ],
+    "pods": [
+      "BRRIO",
+      "BRSSZ"
+    ],
+    "equip": [
+      [
+        40,
+        "RE",
+        1
+      ],
+      [
+        40,
+        "HR",
+        1
+      ]
+    ],
+    "valid_from": "2026-11-01",
+    "valid_to": "2027-12-31",
+    "free_days": 12,
+    "days_type": "C",
+    "approved_by": "Edgars LIEPA",
+    "currency": "",
+    "rates": {}
+  },
+  {
+    "rule_index": 40,
+    "agency": "ZA",
+    "direction": "Export",
+    "contract_number": "R81226016918206",
+    "service_contract": "26-696GAC",
+    "exception_name": "26-696GAC-DCE-01",
+    "file_name": "26-696GAC-DCE.txt",
+    "holder": "DE830209",
+    "named": "DE789763",
+    "pols": [
+      "ZAPLZ"
+    ],
+    "pods": [
+      "DEHAM",
+      "ITGOA"
+    ],
+    "equip": [
+      [
+        20,
+        "DV",
+        0
+      ]
+    ],
+    "valid_from": "2026-12-01",
+    "valid_to": "2027-12-31",
+    "free_days": 14,
+    "days_type": "N",
+    "approved_by": "Elīna KRŪMIŅA",
+    "currency": "",
+    "rates": {}
+  },
+  {
+    "rule_index": 41,
+    "agency": "ZA",
+    "direction": "Export",
+    "contract_number": "R17326091703839",
+    "service_contract": "26-696GAC",
+    "exception_name": "26-696GAC-DCE-02",
+    "file_name": "26-696GAC-DCE.txt",
+    "holder": "DE310645",
+    "named": "DE820127",
+    "pols": [
+      "ZAPLZ",
+      "ZAZBA"
+    ],
+    "pods": [
+      "DEHAM"
+    ],
+    "equip": [
+      [
+        20,
+        "DV",
+        0
+      ],
+      [
+        40,
+        "DV",
+        0
+      ],
+      [
+        40,
+        "HC",
+        0
+      ]
+    ],
+    "valid_from": "2026-12-01",
+    "valid_to": "2027-12-31",
+    "free_days": 14,
+    "days_type": "",
+    "approved_by": "Līga ZARIŅA",
+    "currency": "EUR",
+    "rates": {
+      "l1_rate": 45
+    }
+  },
+  {
+    "rule_index": 42,
+    "agency": "ZA",
+    "direction": "Export",
+    "contract_number": "R22426098460455",
+    "service_contract": "26-696GAC",
+    "exception_name": "26-696GAC-DCE-03",
+    "file_name": "26-696GAC-DCE.txt",
+    "holder": "DE807368",
+    "named": "DE129773",
+    "pols": [
+      "ZADUR",
+      "ZAZBA"
+    ],
+    "pods": [
+      "DEBRV",
+      "ITGOA"
+    ],
+    "equip": [
+      [
+        40,
+        "DV",
+        0
+      ],
+      [
+        40,
+        "HC",
+        0
+      ]
+    ],
+    "valid_from": "2026-12-01",
+    "valid_to": "2027-12-31",
+    "free_days": 25,
+    "days_type": "C",
+    "approved_by": "Toms EGLĪTIS",
+    "currency": "EUR",
+    "rates": {
+      "l1_days": 3,
+      "l1_rate": 60,
+      "l2_rate": 75
+    }
+  },
+  {
+    "rule_index": 43,
+    "agency": "ZA",
+    "direction": "Export",
+    "contract_number": "R64926086024616",
+    "service_contract": "26-696GAC",
+    "exception_name": "26-696GAC-DCE-04",
+    "file_name": "26-696GAC-DCE.txt",
+    "holder": "DE342946",
+    "named": "DE142709",
+    "pols": [
+      "ZADUR"
+    ],
+    "pods": [
+      "DEBRV",
+      "PLGDN"
+    ],
+    "equip": [
+      [
+        20,
+        "DV",
+        0
+      ],
+      [
+        20,
+        "RE",
+        0
+      ]
+    ],
+    "valid_from": "2026-12-01",
+    "valid_to": "2027-12-31",
+    "free_days": 21,
+    "days_type": "N",
+    "approved_by": "Līga ZARIŅA",
+    "currency": "USD",
+    "rates": {
+      "l1_days": 4,
+      "l1_rate": 75,
+      "l2_days": 6,
+      "l2_rate": 105,
+      "l3_rate": 140
+    }
+  },
+  {
+    "rule_index": 44,
+    "agency": "ZA",
+    "direction": "Import",
+    "contract_number": "R48126085457726",
+    "service_contract": "26-877WW",
+    "exception_name": "26-877WW-DMI-01",
+    "file_name": "26-877WW-DMI.txt",
+    "holder": "ZA408672",
+    "named": "ZA602584",
+    "pols": [
+      "FRLEH"
+    ],
+    "pods": [
+      "ZAPLZ",
+      "ZAZBA"
+    ],
+    "equip": [
+      [
+        40,
+        "DV",
+        0
+      ],
+      [
+        40,
+        "RE",
+        0
+      ],
+      [
+        40,
+        "HR",
+        0
+      ]
+    ],
+    "valid_from": "2026-12-31",
+    "valid_to": "2027-12-31",
+    "free_days": 21,
+    "days_type": "",
+    "approved_by": "Elīna KRŪMIŅA",
+    "currency": "EUR",
+    "rates": {
+      "l1_days": 3,
+      "l1_rate": 65,
+      "l2_days": 4,
+      "l2_rate": 95,
+      "l3_days": 5,
+      "l3_rate": 135,
+      "l4_rate": 190
+    }
+  },
+  {
+    "rule_index": 45,
+    "agency": "ZA",
+    "direction": "Import",
+    "contract_number": "R47926078287911",
+    "service_contract": "26-877WW",
+    "exception_name": "26-877WW-DMI-02",
+    "file_name": "26-877WW-DMI.txt",
+    "holder": "ZA416909",
+    "named": "ZA875685",
+    "pols": [
+      "DEHAM",
+      "ITGOA"
+    ],
+    "pods": [
+      "ZADUR"
+    ],
+    "equip": [
+      [
+        40,
+        "RE",
+        1
+      ],
+      [
+        40,
+        "HR",
+        1
+      ]
+    ],
+    "valid_from": "2026-12-31",
+    "valid_to": "2027-12-31",
+    "free_days": 7,
+    "days_type": "C",
+    "approved_by": "Līga ZARIŅA",
+    "currency": "EUR",
+    "rates": {
+      "l1_days": 5,
+      "l1_rate": 80,
+      "l2_rate": 110
+    }
+  },
+  {
+    "rule_index": 46,
+    "agency": "ZA",
+    "direction": "Import",
+    "contract_number": "R55126033601920",
+    "service_contract": "26-877WW",
+    "exception_name": "26-877WW-DMI-03",
+    "file_name": "26-877WW-DMI.txt",
+    "holder": "ZA916448",
+    "named": "ZA486964",
+    "pols": [
+      "BEANR",
+      "NLRTM"
+    ],
+    "pods": [
+      "ZADUR",
+      "ZAZBA"
+    ],
+    "equip": [
+      [
+        20,
+        "DV",
+        0
+      ]
+    ],
+    "valid_from": "2026-12-31",
+    "valid_to": "2027-12-31",
+    "free_days": 15,
+    "days_type": "N",
+    "approved_by": "Anna BĒRZIŅA",
+    "currency": "EUR",
+    "rates": {
+      "l1_days": 4,
+      "l1_rate": 50,
+      "l2_days": 7,
+      "l2_rate": 60,
+      "l3_rate": 100
+    }
+  },
+  {
+    "rule_index": 47,
+    "agency": "ZA",
+    "direction": "Import",
+    "contract_number": "R47726089134458",
+    "service_contract": "26-877WW",
+    "exception_name": "26-877WW-DMI-04",
+    "file_name": "26-877WW-DMI.txt",
+    "holder": "ZA232369",
+    "named": "ZA242995",
+    "pols": [
+      "BEANR"
+    ],
+    "pods": [
+      "ZADUR",
+      "ZAZBA"
+    ],
+    "equip": [
+      [
+        20,
+        "DV",
+        0
+      ],
+      [
+        40,
+        "DV",
+        0
+      ],
+      [
+        40,
+        "HC",
+        0
+      ]
+    ],
+    "valid_from": "2026-12-31",
+    "valid_to": "2027-12-31",
+    "free_days": 12,
+    "days_type": "",
+    "approved_by": "Marta KALNIŅA",
+    "currency": "",
+    "rates": {}
+  }
+]

@@ -1,0 +1,22 @@
+﻿Sistēma,Līguma numurs,Service Contract,Exception Name,Parametrs,Sagaidāmā vērtība,Faktiskā vērtība,Piezīme
+OVA,R82426026224792,26-688EUUS,26-688EUUS-DCE-02,Free Days,10,15,Mācību nolūkā ievietota neatbilstība; TMS ir etalons.
+MARS,R68326045837918,26-688EUUS,26-688EUUS-DCE-03,Days Type,(nav norādīts),N,Mācību nolūkā ievietota neatbilstība; TMS ir etalons.
+OVA,R16926089666924,26-688EUUS,26-688EUUS-DCE-04,Approved by,Līga ZARIŅA,Sintētisks CITS APSTIPRINĀTĀJS,Mācību nolūkā ievietota neatbilstība; TMS ir etalons.
+OVA,R50226051135729,26-247GAC,26-247GAC-DMI-02,Level 1 days,3,5,Mācību nolūkā ievietota neatbilstība; TMS ir etalons.
+MARS,R38326048479331,26-247GAC,26-247GAC-DMI-03,Level 1 rate,45,65,Mācību nolūkā ievietota neatbilstība; TMS ir etalons.
+OVA,R73126122345139,26-247GAC,26-247GAC-DMI-04,Level 2 rate,70,95,Mācību nolūkā ievietota neatbilstība; TMS ir etalons.
+MARS,R43426091225043,26-864WW,26-864WW-DCE-01,Level 3 rate,(nav norādīts),130,Mācību nolūkā ievietota neatbilstība; TMS ir etalons.
+OVA,R83126101799839,26-864WW,26-864WW-DCE-02,Level 4 rate,145,160,Mācību nolūkā ievietota neatbilstība; TMS ir etalons.
+OVA,R42426042050803,26-864WW,26-864WW-DCE-03,Reference Date: sākums,2026-12-31,2027-01-14,Mācību nolūkā ievietota neatbilstība; TMS ir etalons.
+MARS,R28226059815006,26-864WW,26-864WW-DCE-04,Reference Date: beigas,2027-12-31,2027-12-16,Mācību nolūkā ievietota neatbilstība; TMS ir etalons.
+OVA,R55126077603646,26-222EUUS,26-222EUUS-DMI-01,Service Contract Number,R55126077603646,R55126077614880,Mācību nolūkā ievietota neatbilstība; TMS ir etalons.
+OVA,R61226125058197,26-222EUUS,26-222EUUS-DMI-02,Port Of Load UN code,"DEBRV, DEHAM",NLRTM,Mācību nolūkā ievietota neatbilstība; TMS ir etalons.
+OVA,R30926044489192,26-222EUUS,26-222EUUS-DMI-03,Port Of Discharge UN code,"BRPNG, BRRIO",USNYC,Mācību nolūkā ievietota neatbilstība; TMS ir etalons.
+OVA,R27226045033377,26-222EUUS,26-222EUUS-DMI-04,Contract Holder TMS,BR152623,BR153064,Mācību nolūkā ievietota neatbilstība; TMS ir etalons.
+OVA,R95426022853746,26-195GAC,26-195GAC-DCE-01,Named Account TMS,DE979843,DE980722,Mācību nolūkā ievietota neatbilstība; TMS ir etalons.
+OVA,R20926093669519,26-195GAC,26-195GAC-DCE-02,Equipment Size/Type,"(20, 'DV', 0), (40, 'DV', 0), (40, 'HC', 0)","(45, 'HC', 0)",Mācību nolūkā ievietota neatbilstība; TMS ir etalons.
+MARS,R71926099034904,26-195GAC,26-195GAC-DCE-03,Trūkst izņēmuma,Eksistē izņēmums,Nav izņēmuma,Mācību nolūkā ievietota neatbilstība; TMS ir etalons.
+OVA,R72226119544814,26-195GAC,26-195GAC-DCE-04,Trūkst SQL nosacījuma,Eksistē izņēmums,Nav izņēmuma,Mācību nolūkā ievietota neatbilstība; TMS ir etalons.
+MARS,R93626021759116,26-891WW,26-891WW-DMI-01,Dublēts izņēmums,1 MARS ieraksts,2 vienādi ieraksti,Mācību nolūkā ievietota neatbilstība; TMS ir etalons.
+MARS,R73826043960469,26-891WW,26-891WW-DMI-02,Pārklājoši derīguma periodi,1 MARS derīguma periods,2 pārklājoši derīguma periodi,Mācību nolūkā ievietota neatbilstība; TMS ir etalons.
+MARS,R28326051758444,26-891WW,26-891WW-DMI-03,Currency,EUR,USD,Mācību nolūkā ievietota neatbilstība; TMS ir etalons.

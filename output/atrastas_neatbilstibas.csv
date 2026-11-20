@@ -1,0 +1,22 @@
+﻿Prioritāte,Aģentūra,Virziens,Līguma numurs,Service Contract,Exception Name,Sistēma,Parametrs,Sagaidāmā vērtība,Faktiskā vērtība,Paskaidrojums
+Augsta,US,Export,R16926089666924,26-688EUUS,26-688EUUS-DCE-04,OVA,Approved by,Līga ZARIŅA,Sintētisks CITS APSTIPRINĀTĀJS,OVA vērtība atšķiras no sintētiskā TMS līguma nosacījuma.
+Augsta,ZA,Export,R20926093669519,26-195GAC,26-195GAC-DCE-02,OVA,Equipment Size/Type,"20/DV/ne-op, 40/DV/ne-op, 40/HC/ne-op",45/HC/ne-op,OVA vērtība atšķiras no sintētiskā TMS līguma nosacījuma.
+Augsta,BR,Import,R27226045033377,26-222EUUS,26-222EUUS-DMI-04,OVA,Contract Holder TMS,BR152623,BR153064,OVA vērtība atšķiras no sintētiskā TMS līguma nosacījuma.
+Augsta,BR,Export,R28226059815006,26-864WW,26-864WW-DCE-04,MARS,Reference Date: beigas,2027-12-31,2027-12-16,MARS vērtība atšķiras no sintētiskā TMS līguma nosacījuma.
+Augsta,ZA,Import,R28326051758444,26-891WW,26-891WW-DMI-03,MARS,Currency,EUR,USD,MARS vērtība atšķiras no sintētiskā TMS līguma nosacījuma.
+Augsta,BR,Import,R30926044489192,26-222EUUS,26-222EUUS-DMI-03,OVA,Port Of Discharge UN code,"BRPNG, BRRIO",USNYC,OVA vērtība atšķiras no sintētiskā TMS līguma nosacījuma.
+Augsta,US,Import,R38326048479331,26-247GAC,26-247GAC-DMI-03,MARS,Level 1 rate,45,65,MARS vērtība atšķiras no sintētiskā TMS līguma nosacījuma.
+Augsta,BR,Export,R42426042050803,26-864WW,26-864WW-DCE-03,OVA,Reference Date: sākums,2026-12-31,2027-01-14,OVA vērtība atšķiras no sintētiskā TMS līguma nosacījuma.
+Augsta,BR,Export,R43426091225043,26-864WW,26-864WW-DCE-01,MARS,Level 3 rate,(nav norādīts),130,MARS vērtība atšķiras no sintētiskā TMS līguma nosacījuma.
+Augsta,US,Import,R50226051135729,26-247GAC,26-247GAC-DMI-02,OVA,Level 1 days,3,5,OVA vērtība atšķiras no sintētiskā TMS līguma nosacījuma.
+Augsta,BR,Import,R55126077603646,26-222EUUS,26-222EUUS-DMI-01,OVA,Service Contract Number,R55126077603646,R55126077614880,OVA vērtība atšķiras no sintētiskā TMS līguma nosacījuma.
+Augsta,BR,Import,R61226125058197,26-222EUUS,26-222EUUS-DMI-02,OVA,Port Of Load UN code,"DEBRV, DEHAM",NLRTM,OVA vērtība atšķiras no sintētiskā TMS līguma nosacījuma.
+Augsta,US,Export,R68326045837918,26-688EUUS,26-688EUUS-DCE-03,MARS,Days Type,(nav norādīts),N,MARS vērtība atšķiras no sintētiskā TMS līguma nosacījuma.
+Augsta,ZA,Export,R71926099034904,26-195GAC,26-195GAC-DCE-03,MARS,Trūkst izņēmuma,Eksistē izņēmums,Nav izņēmuma,OVA nosacījumam MARS failā nav atbilstoša Exception_Name ieraksta.
+Augsta,ZA,Export,R72226119544814,26-195GAC,(nav norādīts),OVA,Trūkst SQL nosacījuma,Eksistē izņēmums,Nav izņēmuma,Neviena OVA SQL WHEN klauzula nav sasaistīta ar šo TMS līgumu.
+Augsta,US,Import,R73126122345139,26-247GAC,26-247GAC-DMI-04,OVA,Level 2 rate,70,95,OVA vērtība atšķiras no sintētiskā TMS līguma nosacījuma.
+Augsta,ZA,Import,R73826043960469,26-891WW,26-891WW-DMI-02,MARS,Pārklājoši derīguma periodi,1 MARS derīguma periods,2 pārklājoši derīguma periodi,Vienam Exception_Name ir vairāki pārklājoši derīguma periodi.
+Augsta,US,Export,R82426026224792,26-688EUUS,26-688EUUS-DCE-02,OVA,Free Days,10,15,OVA vērtība atšķiras no sintētiskā TMS līguma nosacījuma.
+Augsta,BR,Export,R83126101799839,26-864WW,26-864WW-DCE-02,OVA,Level 4 rate,145,160,OVA vērtība atšķiras no sintētiskā TMS līguma nosacījuma.
+Augsta,ZA,Import,R93626021759116,26-891WW,26-891WW-DMI-01,MARS,Dublēts izņēmums,1 MARS ieraksts,2 vienādi ieraksti,Vairāk nekā viena MARS rinda ar identisku Exception_Name un periodu.
+Augsta,ZA,Export,R95426022853746,26-195GAC,26-195GAC-DCE-01,OVA,Named Account TMS,DE979843,DE980722,OVA vērtība atšķiras no sintētiskā TMS līguma nosacījuma.

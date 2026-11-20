@@ -1,0 +1,212 @@
+[
+  {
+    "Sistēma": "OVA",
+    "Līguma numurs": "R82426026224792",
+    "Service Contract": "26-688EUUS",
+    "Exception Name": "26-688EUUS-DCE-02",
+    "Parametrs": "Free Days",
+    "Sagaidāmā vērtība": "10",
+    "Faktiskā vērtība": "15",
+    "Piezīme": "Mācību nolūkā ievietota neatbilstība; TMS ir etalons."
+  },
+  {
+    "Sistēma": "MARS",
+    "Līguma numurs": "R68326045837918",
+    "Service Contract": "26-688EUUS",
+    "Exception Name": "26-688EUUS-DCE-03",
+    "Parametrs": "Days Type",
+    "Sagaidāmā vērtība": "(nav norādīts)",
+    "Faktiskā vērtība": "N",
+    "Piezīme": "Mācību nolūkā ievietota neatbilstība; TMS ir etalons."
+  },
+  {
+    "Sistēma": "OVA",
+    "Līguma numurs": "R16926089666924",
+    "Service Contract": "26-688EUUS",
+    "Exception Name": "26-688EUUS-DCE-04",
+    "Parametrs": "Approved by",
+    "Sagaidāmā vērtība": "Līga ZARIŅA",
+    "Faktiskā vērtība": "Sintētisks CITS APSTIPRINĀTĀJS",
+    "Piezīme": "Mācību nolūkā ievietota neatbilstība; TMS ir etalons."
+  },
+  {
+    "Sistēma": "OVA",
+    "Līguma numurs": "R50226051135729",
+    "Service Contract": "26-247GAC",
+    "Exception Name": "26-247GAC-DMI-02",
+    "Parametrs": "Level 1 days",
+    "Sagaidāmā vērtība": "3",
+    "Faktiskā vērtība": "5",
+    "Piezīme": "Mācību nolūkā ievietota neatbilstība; TMS ir etalons."
+  },
+  {
+    "Sistēma": "MARS",
+    "Līguma numurs": "R38326048479331",
+    "Service Contract": "26-247GAC",
+    "Exception Name": "26-247GAC-DMI-03",
+    "Parametrs": "Level 1 rate",
+    "Sagaidāmā vērtība": "45",
+    "Faktiskā vērtība": "65",
+    "Piezīme": "Mācību nolūkā ievietota neatbilstība; TMS ir etalons."
+  },
+  {
+    "Sistēma": "OVA",
+    "Līguma numurs": "R73126122345139",
+    "Service Contract": "26-247GAC",
+    "Exception Name": "26-247GAC-DMI-04",
+    "Parametrs": "Level 2 rate",
+    "Sagaidāmā vērtība": "70",
+    "Faktiskā vērtība": "95",
+    "Piezīme": "Mācību nolūkā ievietota neatbilstība; TMS ir etalons."
+  },
+  {
+    "Sistēma": "MARS",
+    "Līguma numurs": "R43426091225043",
+    "Service Contract": "26-864WW",
+    "Exception Name": "26-864WW-DCE-01",
+    "Parametrs": "Level 3 rate",
+    "Sagaidāmā vērtība": "(nav norādīts)",
+    "Faktiskā vērtība": "130",
+    "Piezīme": "Mācību nolūkā ievietota neatbilstība; TMS ir etalons."
+  },
+  {
+    "Sistēma": "OVA",
+    "Līguma numurs": "R83126101799839",
+    "Service Contract": "26-864WW",
+    "Exception Name": "26-864WW-DCE-02",
+    "Parametrs": "Level 4 rate",
+    "Sagaidāmā vērtība": "145",
+    "Faktiskā vērtība": "160",
+    "Piezīme": "Mācību nolūkā ievietota neatbilstība; TMS ir etalons."
+  },
+  {
+    "Sistēma": "OVA",
+    "Līguma numurs": "R42426042050803",
+    "Service Contract": "26-864WW",
+    "Exception Name": "26-864WW-DCE-03",
+    "Parametrs": "Reference Date: sākums",
+    "Sagaidāmā vērtība": "2026-12-31",
+    "Faktiskā vērtība": "2027-01-14",
+    "Piezīme": "Mācību nolūkā ievietota neatbilstība; TMS ir etalons."
+  },
+  {
+    "Sistēma": "MARS",
+    "Līguma numurs": "R28226059815006",
+    "Service Contract": "26-864WW",
+    "Exception Name": "26-864WW-DCE-04",
+    "Parametrs": "Reference Date: beigas",
+    "Sagaidāmā vērtība": "2027-12-31",
+    "Faktiskā vērtība": "2027-12-16",
+    "Piezīme": "Mācību nolūkā ievietota neatbilstība; TMS ir etalons."
+  },
+  {
+    "Sistēma": "OVA",
+    "Līguma numurs": "R55126077603646",
+    "Service Contract": "26-222EUUS",
+    "Exception Name": "26-222EUUS-DMI-01",
+    "Parametrs": "Service Contract Number",
+    "Sagaidāmā vērtība": "R55126077603646",
+    "Faktiskā vērtība": "R55126077614880",
+    "Piezīme": "Mācību nolūkā ievietota neatbilstība; TMS ir etalons."
+  },
+  {
+    "Sistēma": "OVA",
+    "Līguma numurs": "R61226125058197",
+    "Service Contract": "26-222EUUS",
+    "Exception Name": "26-222EUUS-DMI-02",
+    "Parametrs": "Port Of Load UN code",
+    "Sagaidāmā vērtība": "DEBRV, DEHAM",
+    "Faktiskā vērtība": "NLRTM",
+    "Piezīme": "Mācību nolūkā ievietota neatbilstība; TMS ir etalons."
+  },
+  {
+    "Sistēma": "OVA",
+    "Līguma numurs": "R30926044489192",
+    "Service Contract": "26-222EUUS",
+    "Exception Name": "26-222EUUS-DMI-03",
+    "Parametrs": "Port Of Discharge UN code",
+    "Sagaidāmā vērtība": "BRPNG, BRRIO",
+    "Faktiskā vērtība": "USNYC",
+    "Piezīme": "Mācību nolūkā ievietota neatbilstība; TMS ir etalons."
+  },
+  {
+    "Sistēma": "OVA",
+    "Līguma numurs": "R27226045033377",
+    "Service Contract": "26-222EUUS",
+    "Exception Name": "26-222EUUS-DMI-04",
+    "Parametrs": "Contract Holder TMS",
+    "Sagaidāmā vērtība": "BR152623",
+    "Faktiskā vērtība": "BR153064",
+    "Piezīme": "Mācību nolūkā ievietota neatbilstība; TMS ir etalons."
+  },
+  {
+    "Sistēma": "OVA",
+    "Līguma numurs": "R95426022853746",
+    "Service Contract": "26-195GAC",
+    "Exception Name": "26-195GAC-DCE-01",
+    "Parametrs": "Named Account TMS",
+    "Sagaidāmā vērtība": "DE979843",
+    "Faktiskā vērtība": "DE980722",
+    "Piezīme": "Mācību nolūkā ievietota neatbilstība; TMS ir etalons."
+  },
+  {
+    "Sistēma": "OVA",
+    "Līguma numurs": "R20926093669519",
+    "Service Contract": "26-195GAC",
+    "Exception Name": "26-195GAC-DCE-02",
+    "Parametrs": "Equipment Size/Type",
+    "Sagaidāmā vērtība": "(20, 'DV', 0), (40, 'DV', 0), (40, 'HC', 0)",
+    "Faktiskā vērtība": "(45, 'HC', 0)",
+    "Piezīme": "Mācību nolūkā ievietota neatbilstība; TMS ir etalons."
+  },
+  {
+    "Sistēma": "MARS",
+    "Līguma numurs": "R71926099034904",
+    "Service Contract": "26-195GAC",
+    "Exception Name": "26-195GAC-DCE-03",
+    "Parametrs": "Trūkst izņēmuma",
+    "Sagaidāmā vērtība": "Eksistē izņēmums",
+    "Faktiskā vērtība": "Nav izņēmuma",
+    "Piezīme": "Mācību nolūkā ievietota neatbilstība; TMS ir etalons."
+  },
+  {
+    "Sistēma": "OVA",
+    "Līguma numurs": "R72226119544814",
+    "Service Contract": "26-195GAC",
+    "Exception Name": "26-195GAC-DCE-04",
+    "Parametrs": "Trūkst SQL nosacījuma",
+    "Sagaidāmā vērtība": "Eksistē izņēmums",
+    "Faktiskā vērtība": "Nav izņēmuma",
+    "Piezīme": "Mācību nolūkā ievietota neatbilstība; TMS ir etalons."
+  },
+  {
+    "Sistēma": "MARS",
+    "Līguma numurs": "R93626021759116",
+    "Service Contract": "26-891WW",
+    "Exception Name": "26-891WW-DMI-01",
+    "Parametrs": "Dublēts izņēmums",
+    "Sagaidāmā vērtība": "1 MARS ieraksts",
+    "Faktiskā vērtība": "2 vienādi ieraksti",
+    "Piezīme": "Mācību nolūkā ievietota neatbilstība; TMS ir etalons."
+  },
+  {
+    "Sistēma": "MARS",
+    "Līguma numurs": "R73826043960469",
+    "Service Contract": "26-891WW",
+    "Exception Name": "26-891WW-DMI-02",
+    "Parametrs": "Pārklājoši derīguma periodi",
+    "Sagaidāmā vērtība": "1 MARS derīguma periods",
+    "Faktiskā vērtība": "2 pārklājoši derīguma periodi",
+    "Piezīme": "Mācību nolūkā ievietota neatbilstība; TMS ir etalons."
+  },
+  {
+    "Sistēma": "MARS",
+    "Līguma numurs": "R28326051758444",
+    "Service Contract": "26-891WW",
+    "Exception Name": "26-891WW-DMI-03",
+    "Parametrs": "Currency",
+    "Sagaidāmā vērtība": "EUR",
+    "Faktiskā vērtība": "USD",
+    "Piezīme": "Mācību nolūkā ievietota neatbilstība; TMS ir etalons."
+  }
+]
